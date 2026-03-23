@@ -72,14 +72,46 @@ Este documento acompanha a construção do site de documentação do Catalyst Sk
 
 ## 🟢 TÓPICO 8 — Páginas de Docs — Backend e Frontend
 
-- [ ] Detalhamento do Padrão Resultado e DTOs
-- [ ] Guia de Frontend por Features (No useEffect)
-- [ ] Integração Axios e TanStack Query
-- [ ] Padrão de Nomenclatura e PSR-12
+- [x] Detalhamento do Padrão Resultado e DTOs
+- [x] Guia de Frontend por Features (No useEffect)
+- [x] Integração Axios e TanStack Query
+- [x] Padrão de Nomenclatura e PSR-12
+
+---
+
+## 🟢 TÓPICO 9 — Páginas de Docs — Infraestrutura e Qualidade
+
+- [x] Banco de Dados (UUID v7, Migrations)
+- [x] Mensageria (Symfony Messenger, Workers)
+- [x] Qualidade (PHPUnit, PHPStan, Biome)
+- [x] DevOps (Docker, CI/CD)
+- [x] Makefile (Produtividade CLI)
+
+---
+
+## 🟢 TÓPICO 10 — Polimento Final, SEO e Deploy
+
+- [ ] Revisão de todos os links e navegação
+- [ ] Tags SEO (Metadados, OpenGraph)
+- [ ] Otimização de Imagens e Assets
+- [ ] Teste de Performance (Lighthouse)
 
 ---
 
 ## ⚪ TÓPICOS RESTANTES
+
+### [Tópico 9 — Infraestrutura e Qualidade]
+
+- Implementadas páginas detalhadas para Banco de Dados, Mensageria, Qualidade, DevOps, Makefile e Nomenclatura.
+- Adicionados exemplos de código reais para cada seção técnica.
+- Garantida a densidade de conteúdo e o design consistente com o `DESIGN.md`.
+- Vinculadas todas as páginas via CTAs de "Próximos Passos".
+
+### [Tópico 8 — Backend e Frontend]
+
+- Criadas páginas de Backend e Frontend com foco em Clean Architecture e React 19.
+- Detalhados padrões como "No useEffect", "Services Atômicos" e "Enums Obrigatórios".
+- Integrados exemplos de código para TanStack Query e Padrão Resultado Symfony.
 
 ### [Tópico 7 — Conteúdo de Introdução, Arquitetura e Autenticação]
 
