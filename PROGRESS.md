@@ -27,16 +27,24 @@ Este documento acompanha a construção do site de documentação do Catalyst Sk
 
 ## 🟢 TÓPICO 3 — Landing Page — Hero e Apresentação Principal
 
-- [ ] Hero Section (Título display, CTA principal, animação entry)
-- [ ] Visual Mockup (Representação visual do sistema/código)
-- [ ] Sub-hero (Texto de apoio denso)
-- [ ] Grid de Benefícios iniciais
+- [x] Hero Section (Título display, CTA principal, animação entry)
+- [x] Visual Mockup (Representação visual do sistema/código)
+- [x] Sub-hero (Texto de apoio denso)
+- [x] Grid de Benefícios iniciais
+
+---
+
+## 🟢 TÓPICO 4 — Landing Page — Diferenciais, Stack e Versões
+
+- [ ] Seção "Por que Catalyst?" (Diferenciais competitivos)
+- [ ] Tech Stack Showcase (Grid de logos/icones das tecnologias)
+- [ ] Timeline de Versões (O que tem em cada versão v1 a v4)
+- [ ] Badge de Versionamento Centralizado
 
 ---
 
 ## ⚪ TÓPICOS RESTANTES
 
-- [ ] TÓPICO 4 — Landing Page — Diferenciais, Stack e Versões
 - [ ] TÓPICO 5 — Landing Page — CTA, Setup Rápido e Rodapé
 - [ ] TÓPICO 6 — Layout da Documentação — Estrutura Navegável
 - [ ] TÓPICO 7 — Páginas de Docs — Introdução, Arquitetura e Autenticação
@@ -64,3 +72,10 @@ Este documento acompanha a construção do site de documentação do Catalyst Sk
 - Criados componentes `VStack`, `HStack` e `Box` para ritmo de layout consistente.
 - Desenvolvidos `Badge`, `Card (com glow)`, `Callout` e `CodeBlock (com copy)`.
 - Customizado componente `Button` do Shadcn para alinhar com a identidade Catalyst.
+
+### [Tópico 3 — Hero & Apresentação]
+
+- Implementada Hero Section com tipografia de alto impacto e animações Framer Motion.
+- Criado Mockup Visual interativo representando o código-fonte do sistema.
+- Desenvolvido grid inicial de benefícios com cards responsivos e efeitos de hover.
+- Instalada e configurada biblioteca `framer-motion` para transições fluidas.
