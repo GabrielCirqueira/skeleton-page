@@ -63,23 +63,31 @@ Este documento acompanha a construção do site de documentação do Catalyst Sk
 
 ## 🟢 TÓPICO 7 — Páginas de Docs — Introdução, Arquitetura e Autenticação
 
-- [ ] Conteúdo detalhado da Introdução (Visão Geral)
-- [ ] Diagramas de Arquitetura (Mermaid/Estilizado)
-- [ ] Guia de Autenticação JWT RS256
-- [ ] Exemplos de Código Reais
+- [x] Conteúdo detalhado da Introdução (Visão Geral)
+- [x] Diagramas de Arquitetura (Mermaid/Estilizado)
+- [x] Guia de Autenticação JWT RS256
+- [x] Exemplos de Código Reais
+
+---
+
+## 🟢 TÓPICO 8 — Páginas de Docs — Backend e Frontend
+
+- [ ] Detalhamento do Padrão Resultado e DTOs
+- [ ] Guia de Frontend por Features (No useEffect)
+- [ ] Integração Axios e TanStack Query
+- [ ] Padrão de Nomenclatura e PSR-12
 
 ---
 
 ## ⚪ TÓPICOS RESTANTES
 
-### [Tópico 6 — Layout da Documentação]
+### [Tópico 7 — Conteúdo de Introdução, Arquitetura e Autenticação]
 
-- Criada infraestrutura de 3 colunas para docs: Sidebar (Navegação), Main (Conteúdo), TOC (Âncoras).
-- Implementada sidebar dinâmica com grupos de links e links ativos.
-- Desenvolvida Table of Contents (TOC) baseada em Intersection Observer para scrollspy.
-- Criado Breadcrumb automático baseado na rota.
-- Adicionado sistema de Mobile Drawer para navegação em telas pequenas.
-- Integrado `DocLayout` globalmente no `App.tsx` usando rotas aninhadas.
+- Implementada página de Introdução com visão geral, pré-requisitos e setup mágico.
+- Desenvolvida página de Arquitetura detalhando as camadas (Controller, Service, etc.) e o padrão Resultado.
+- Criada página de Autenticação com explicação técnica do fluxo JWT RS256 e interceptores Axios.
+- Adicionados exemplos de código reais e CTAs de navegação entre as páginas.
+- Ajustados componentes UI (Title/Text) para suportar IDs e navegação via TOC.
 
 ---
 

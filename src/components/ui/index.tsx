@@ -1,47 +1,49 @@
 import React from "react";
 import { cn } from "@/utils/cn";
 
+export * from "./Badge";
+export * from "./Card";
+export * from "./Callout";
+export * from "./CodeBlock";
+
 interface TextProps {
   children: React.ReactNode;
+  variant?: "display" | "h1" | "h2" | "h3" | "h4" | "lg" | "md" | "sm" | "xs";
   className?: string;
-  variant?: "display" | "h1" | "h2" | "h3" | "h4" | "lg" | "base" | "sm" | "xs";
-  as?: React.ElementType;
+  id?: string;
 }
 
-export function Title({ children, className, variant = "h1", as }: TextProps) {
+export function Title({ children, variant = "h1", className, id }: TextProps) {
+  const Tag = (variant === "display" ? "h1" : variant) as React.ElementType;
   const variants = {
-    display: "text-4xl sm:text-6xl font-black leading-[1.1] tracking-tight font-poppins",
-    h1: "text-3xl sm:text-4xl font-black leading-tight font-poppins",
-    h2: "text-2xl font-bold font-poppins",
-    h3: "text-xl font-bold font-poppins",
-    h4: "text-lg font-semibold font-poppins",
+    display: "text-5xl md:text-7xl font-black tracking-tight leading-[1.1] font-poppins",
+    h1: "text-4xl md:text-6xl font-black tracking-tight font-poppins",
+    h2: "text-3xl md:text-5xl font-black tracking-tight font-poppins",
+    h3: "text-2xl md:text-4xl font-black tracking-tight font-poppins",
+    h4: "text-xl md:text-2xl font-black tracking-tight font-poppins",
   };
 
-  type TitleTag = "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
-  const Component = (as || (variant === "display" ? "h1" : variant)) as TitleTag;
-
   return (
-    <Component className={cn(variants[variant as keyof typeof variants] || variants.h1, className)}>
+    <Tag
+      id={id}
+      className={cn(variants[variant as keyof typeof variants] || variants.h1, className)}
+    >
       {children}
-    </Component>
+    </Tag>
   );
 }
 
-export function Text({ children, className, variant = "base", as: Tag = "p" }: TextProps) {
+export function Text({ children, variant = "md", className, id }: TextProps) {
   const variants = {
-    lg: "text-lg leading-relaxed font-lato text-typography-600 dark:text-typography-400",
-    base: "text-base font-lato text-typography-600 dark:text-typography-400",
-    sm: "text-sm font-lato text-typography-600 dark:text-typography-400",
-    xs: "text-xs font-bold uppercase tracking-widest font-lato text-typography-400",
+    lg: "text-lg md:text-xl font-medium leading-relaxed font-lato",
+    md: "text-base font-medium leading-relaxed font-lato",
+    sm: "text-sm font-medium leading-relaxed font-lato",
+    xs: "text-xs font-bold tracking-wider uppercase font-lato",
   };
 
-  const Component = Tag as React.ElementType;
-
   return (
-    <Component
-      className={cn(variants[variant as keyof typeof variants] || variants.base, className)}
-    >
+    <p id={id} className={cn(variants[variant as keyof typeof variants] || variants.md, className)}>
       {children}
-    </Component>
+    </p>
   );
 }
