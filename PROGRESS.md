@@ -15,19 +15,27 @@ Este documento acompanha a construção do site de documentação do Catalyst Sk
 
 ## 🟢 TÓPICO 2 — Componentes Globais e Layout Base
 
-- [ ] Navbar (Identidade visual, blur, responsiva)
-- [ ] Footer (Versão, links rápidos, externos)
-- [ ] Bloco de Código (Syntax highlight, tema dark, botão copiar)
-- [ ] Callout (Info, Tip, Warning, Danger)
-- [ ] Badge (Status semânticos)
-- [ ] Card (Superfície, hover com glow)
+- [x] Navbar (Identidade visual, blur, responsiva)
+- [x] Footer (Versão, links rápidos, externos)
+- [x] Bloco de Código (Syntax highlight, tema dark, botão copiar)
+- [x] Callout (Info, Tip, Warning, Danger)
+- [x] Badge (Status semânticos)
+- [x] Card (Superfície, hover com glow)
 - [x] AppContainer e Container (Hierarquia obrigatória)
+
+---
+
+## 🟢 TÓPICO 3 — Landing Page — Hero e Apresentação Principal
+
+- [ ] Hero Section (Título display, CTA principal, animação entry)
+- [ ] Visual Mockup (Representação visual do sistema/código)
+- [ ] Sub-hero (Texto de apoio denso)
+- [ ] Grid de Benefícios iniciais
 
 ---
 
 ## ⚪ TÓPICOS RESTANTES
 
-- [ ] TÓPICO 3 — Landing Page — Hero e Apresentação Principal
 - [ ] TÓPICO 4 — Landing Page — Diferenciais, Stack e Versões
 - [ ] TÓPICO 5 — Landing Page — CTA, Setup Rápido e Rodapé
 - [ ] TÓPICO 6 — Layout da Documentação — Estrutura Navegável
@@ -48,3 +56,11 @@ Este documento acompanha a construção do site de documentação do Catalyst Sk
 - Mapeadas todas as rotas operacionais no `App.tsx`.
 - Criados os componentes primitivos de layout `AppContainer` e `Container`.
 - Criados os componentes de tipografia `Title` e `Text` seguindo a escala visual.
+
+### [Tópico 2 — Componentes Globais]
+
+- Desenvolvida Navbar com glassmorphism e responsividade.
+- Desenvolvido Footer denso com links de navegação e redes sociais.
+- Criados componentes `VStack`, `HStack` e `Box` para ritmo de layout consistente.
+- Desenvolvidos `Badge`, `Card (com glow)`, `Callout` e `CodeBlock (com copy)`.
+- Customizado componente `Button` do Shadcn para alinhar com a identidade Catalyst.
