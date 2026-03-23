@@ -6,6 +6,7 @@ import { Button } from "@shadcn/components/button";
 import { Menu, X, Github } from "lucide-react";
 import React from "react";
 import { cn } from "@/utils/cn";
+import { ThemeToggle } from "../ui/ThemeToggle";
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -54,6 +55,7 @@ export function Navbar() {
               </Link>
             ))}
             <HStack gap={4}>
+              <ThemeToggle />
               <Button asChild variant="ghost" size="icon">
                 <a
                   href="https://github.com/GabrielCirqueira/catalyst-testproject"
@@ -70,9 +72,12 @@ export function Navbar() {
           </HStack>
 
           {/* Mobile Toggle */}
-          <button className="md:hidden text-white p-2" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-            {isMenuOpen ? <X /> : <Menu />}
-          </button>
+          <HStack gap={2} className="md:hidden">
+            <ThemeToggle />
+            <button className="text-white p-2" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+              {isMenuOpen ? <X /> : <Menu />}
+            </button>
+          </HStack>
         </HStack>
 
         {/* Mobile Menu */}

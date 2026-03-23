@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate, Outlet } from "react-router-dom";
 import { DocLayout } from "@/components/layout/Docs/DocLayout";
+import { ThemeProvider } from "@/contexts/ThemeContext";
 
 // Páginas
 import { Component as LandingPage } from "@/pages/LandingPage/LandingPage";
@@ -17,34 +18,36 @@ import { Component as Nomenclatura } from "@/pages/Docs/Nomenclatura/Nomenclatur
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
+    <ThemeProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
 
-        {/* Documentação com Layout Centralizado */}
-        <Route
-          path="/docs"
-          element={
-            <DocLayout>
-              <Outlet />
-            </DocLayout>
-          }
-        >
-          <Route index element={<Introducao />} />
-          <Route path="arquitetura" element={<Arquitetura />} />
-          <Route path="autenticacao" element={<Autenticacao />} />
-          <Route path="backend" element={<Backend />} />
-          <Route path="frontend" element={<Frontend />} />
-          <Route path="banco-de-dados" element={<BancoDeDados />} />
-          <Route path="mensageria" element={<Mensageria />} />
-          <Route path="qualidade" element={<Qualidade />} />
-          <Route path="devops" element={<DevOps />} />
-          <Route path="makefile" element={<Makefile />} />
-          <Route path="nomenclatura" element={<Nomenclatura />} />
-        </Route>
+          {/* Documentação com Layout Centralizado */}
+          <Route
+            path="/docs"
+            element={
+              <DocLayout>
+                <Outlet />
+              </DocLayout>
+            }
+          >
+            <Route index element={<Introducao />} />
+            <Route path="arquitetura" element={<Arquitetura />} />
+            <Route path="autenticacao" element={<Autenticacao />} />
+            <Route path="backend" element={<Backend />} />
+            <Route path="frontend" element={<Frontend />} />
+            <Route path="banco-de-dados" element={<BancoDeDados />} />
+            <Route path="mensageria" element={<Mensageria />} />
+            <Route path="qualidade" element={<Qualidade />} />
+            <Route path="devops" element={<DevOps />} />
+            <Route path="makefile" element={<Makefile />} />
+            <Route path="nomenclatura" element={<Nomenclatura />} />
+          </Route>
 
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Routes>
-    </BrowserRouter>
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
