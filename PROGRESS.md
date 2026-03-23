@@ -36,21 +36,50 @@ Este documento acompanha a construção do site de documentação do Catalyst Sk
 
 ## 🟢 TÓPICO 4 — Landing Page — Diferenciais, Stack e Versões
 
-- [ ] Seção "Por que Catalyst?" (Diferenciais competitivos)
-- [ ] Tech Stack Showcase (Grid de logos/icones das tecnologias)
-- [ ] Timeline de Versões (O que tem em cada versão v1 a v4)
-- [ ] Badge de Versionamento Centralizado
+- [x] Seção "Por que Catalyst?" (Diferenciais competitivos)
+- [x] Tech Stack Showcase (Grid de logos/icones das tecnologias)
+- [x] Timeline de Versões (O que tem em cada versão v1 a v4)
+- [x] Badge de Versionamento Centralizado
+
+---
+
+## 🟢 TÓPICO 5 — Landing Page — CTA, Setup Rápido e Rodapé
+
+- [x] Seção "Como Começar" (Setup Rápido)
+- [x] Seção de Quote (Poder de síntese)
+- [x] Revisão Final da Landing (Mobile, SEO, Performance)
+
+---
+
+## 🟢 TÓPICO 6 — Layout da Documentação — Estrutura Navegável
+
+- [x] Estrutura de Três Colunas (Sidebar, Conteúdo, TOC)
+- [x] Sidebar de Navegação (Categorias e links)
+- [x] Table of Contents (Âncoras dinâmicas)
+- [x] Breadcrumb (Localização espacial)
+- [x] Mobile Sidebar (Drawer lateral)
+
+---
+
+## 🟢 TÓPICO 7 — Páginas de Docs — Introdução, Arquitetura e Autenticação
+
+- [ ] Conteúdo detalhado da Introdução (Visão Geral)
+- [ ] Diagramas de Arquitetura (Mermaid/Estilizado)
+- [ ] Guia de Autenticação JWT RS256
+- [ ] Exemplos de Código Reais
 
 ---
 
 ## ⚪ TÓPICOS RESTANTES
 
-- [ ] TÓPICO 5 — Landing Page — CTA, Setup Rápido e Rodapé
-- [ ] TÓPICO 6 — Layout da Documentação — Estrutura Navegável
-- [ ] TÓPICO 7 — Páginas de Docs — Introdução, Arquitetura e Autenticação
-- [ ] TÓPICO 8 — Páginas de Docs — Backend e Frontend
-- [ ] TÓPICO 9 — Páginas de Docs — Infraestrutura, Qualidade e Referências
-- [ ] TÓPICO 10 — Polimento Final, SEO e Deploy
+### [Tópico 6 — Layout da Documentação]
+
+- Criada infraestrutura de 3 colunas para docs: Sidebar (Navegação), Main (Conteúdo), TOC (Âncoras).
+- Implementada sidebar dinâmica com grupos de links e links ativos.
+- Desenvolvida Table of Contents (TOC) baseada em Intersection Observer para scrollspy.
+- Criado Breadcrumb automático baseado na rota.
+- Adicionado sistema de Mobile Drawer para navegação em telas pequenas.
+- Integrado `DocLayout` globalmente no `App.tsx` usando rotas aninhadas.
 
 ---
 
@@ -79,3 +108,17 @@ Este documento acompanha a construção do site de documentação do Catalyst Sk
 - Criado Mockup Visual interativo representando o código-fonte do sistema.
 - Desenvolvido grid inicial de benefícios com cards responsivos e efeitos de hover.
 - Instalada e configurada biblioteca `framer-motion` para transições fluidas.
+
+### [Tópico 4 — Diferenciais & Stack]
+
+- Criada seção de diferenciais competitivos com cards detalhados.
+- Implementada comparação "Antes e Depois" para demonstrar ganho de produtividade.
+- Desenvolvido Tech Stack Showcase com detalhes de Backend e Frontend.
+- Construída Timeline de Versões (v1 a v4) demonstrando maturidade do projeto.
+
+### [Tópico 5 — Conversão & Finalização]
+
+- Implementada seção "Setup Rápido" com guia prático de 3 passos.
+- Adicionada seção de Quote inspiracional para fechamento da narrativa.
+- Realizada limpeza de imports e otimização de componentes da Landing Page.
+- Garantida a consistência visual dark-first em todas as seções.

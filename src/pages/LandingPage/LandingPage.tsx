@@ -3,14 +3,16 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Title, Text } from "@/components/ui";
 import { Button } from "@shadcn/components/button";
-import { HStack, VStack, Box } from "@/components/layout/Stack";
+import { HStack } from "@/components/layout/Stack";
 import { MockupVisual } from "@/components/landing/MockupVisual";
 import { Stats } from "@/components/landing/Stats";
 import { Diferenciais } from "@/components/landing/Diferenciais";
 import { AntesDepois } from "@/components/landing/AntesDepois";
 import { StackCompleta } from "@/components/landing/StackCompleta";
 import { LinhaDoTempo } from "@/components/landing/LinhaDoTempo";
-import { ArrowRight, Code, Zap, Shield, Sparkles } from "lucide-react";
+import { SetupRapido } from "@/components/landing/SetupRapido";
+import { Quote } from "@/components/landing/Quote";
+import { ArrowRight, Code, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 import { fadeInUp, containerStagger } from "@/utils/animacoes";
 import { Link } from "react-router-dom";
@@ -102,54 +104,14 @@ export function Component() {
         <LinhaDoTempo />
       </Container>
 
-      {/* Grid de Benefícios Iniciais */}
-      <Container className="py-20 bg-background-900/30 border-y border-outline-900/50">
-        <motion.div
-          variants={containerStagger}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-12"
-        >
-          {[
-            {
-              icon: Zap,
-              title: "Velocidade Extrema",
-              description:
-                "Vite, React 19 e PHP 8.4 em harmonia para uma experiência de desenvolvimento e execução que redefine o padrão.",
-            },
-            {
-              icon: Shield,
-              title: "Segurança de Elite",
-              description:
-                "Autenticação JWT com chaves RS256 e fluxos de estado robustos para aplicações de grau empresarial.",
-            },
-            {
-              icon: Code,
-              title: "Limpeza Acima de Tudo",
-              description:
-                "Padronização estrita de código com lints globais e tipagem profunda. Menos bugs, mais transparência.",
-            },
-          ].map((item, index) => (
-            <motion.div
-              key={index}
-              variants={fadeInUp}
-              className="flex flex-col gap-6 p-8 rounded-2xl border border-outline-900 bg-background-950/50 hover:border-brand-500/30 transition-all group"
-            >
-              <Box className="size-14 rounded-xl bg-brand-500/10 flex items-center justify-center text-brand-500 group-hover:bg-brand-500/20 transition-colors">
-                <item.icon className="size-7" />
-              </Box>
-              <VStack gap={4}>
-                <Title variant="h3" className="text-white text-xl">
-                  {item.title}
-                </Title>
-                <Text className="text-typography-400 font-medium leading-relaxed">
-                  {item.description}
-                </Text>
-              </VStack>
-            </motion.div>
-          ))}
-        </motion.div>
+      {/* Setup Section */}
+      <Container className="py-24">
+        <SetupRapido />
+      </Container>
+
+      {/* Quote Section */}
+      <Container className="py-24">
+        <Quote />
       </Container>
 
       <Footer />

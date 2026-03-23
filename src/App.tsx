@@ -1,43 +1,50 @@
-import { ThemeProvider } from "@/contexts";
-import { MainLayout } from "@layouts";
-import {
-  createBrowserRouter,
-  createRoutesFromElements,
-  Route,
-  RouterProvider,
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate, Outlet } from "react-router-dom";
+import { DocLayout } from "@/components/layout/Docs/DocLayout";
 
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <>
-      {/* Landing Page */}
-      <Route path="/" lazy={() => import("@/pages/LandingPage/LandingPage")} />
-
-      {/* Documentação */}
-      <Route path="/docs">
-        <Route index lazy={() => import("@/pages/Docs/Introducao/Introducao")} />
-        <Route path="arquitetura" lazy={() => import("@/pages/Docs/Arquitetura/Arquitetura")} />
-        <Route path="autenticacao" lazy={() => import("@/pages/Docs/Autenticacao/Autenticacao")} />
-        <Route path="backend" lazy={() => import("@/pages/Docs/Backend/Backend")} />
-        <Route path="frontend" lazy={() => import("@/pages/Docs/Frontend/Frontend")} />
-        <Route
-          path="banco-de-dados"
-          lazy={() => import("@/pages/Docs/BancoDeDados/BancoDeDados")}
-        />
-        <Route path="mensageria" lazy={() => import("@/pages/Docs/Mensageria/Mensageria")} />
-        <Route path="qualidade" lazy={() => import("@/pages/Docs/Qualidade/Qualidade")} />
-        <Route path="devops" lazy={() => import("@/pages/Docs/DevOps/DevOps")} />
-        <Route path="makefile" lazy={() => import("@/pages/Docs/Makefile/Makefile")} />
-        <Route path="nomenclatura" lazy={() => import("@/pages/Docs/Nomenclatura/Nomenclatura")} />
-      </Route>
-    </>
-  )
-);
+// Páginas
+import { Component as LandingPage } from "@/pages/LandingPage/LandingPage";
+import { Component as Introducao } from "@/pages/Docs/Introducao/Introducao";
+import { Component as Arquitetura } from "@/pages/Docs/Arquitetura/Arquitetura";
+import { Component as Autenticacao } from "@/pages/Docs/Autenticacao/Autenticacao";
+import { Component as Backend } from "@/pages/Docs/Backend/Backend";
+import { Component as Frontend } from "@/pages/Docs/Frontend/Frontend";
+import { Component as BancoDeDados } from "@/pages/Docs/BancoDeDados/BancoDeDados";
+import { Component as Mensageria } from "@/pages/Docs/Mensageria/Mensageria";
+import { Component as Qualidade } from "@/pages/Docs/Qualidade/Qualidade";
+import { Component as DevOps } from "@/pages/Docs/DevOps/DevOps";
+import { Component as Makefile } from "@/pages/Docs/Makefile/Makefile";
+import { Component as Nomenclatura } from "@/pages/Docs/Nomenclatura/Nomenclatura";
 
 export default function App() {
   return (
-    <ThemeProvider>
-      <RouterProvider router={router} />
-    </ThemeProvider>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+
+        {/* Documentação com Layout Centralizado */}
+        <Route
+          path="/docs"
+          element={
+            <DocLayout>
+              <Outlet />
+            </DocLayout>
+          }
+        >
+          <Route index element={<Introducao />} />
+          <Route path="arquitetura" element={<Arquitetura />} />
+          <Route path="autenticacao" element={<Autenticacao />} />
+          <Route path="backend" element={<Backend />} />
+          <Route path="frontend" element={<Frontend />} />
+          <Route path="banco-de-dados" element={<BancoDeDados />} />
+          <Route path="mensageria" element={<Mensageria />} />
+          <Route path="qualidade" element={<Qualidade />} />
+          <Route path="devops" element={<DevOps />} />
+          <Route path="makefile" element={<Makefile />} />
+          <Route path="nomenclatura" element={<Nomenclatura />} />
+        </Route>
+
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
