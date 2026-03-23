@@ -5,6 +5,11 @@ import { Title, Text } from "@/components/ui";
 import { Button } from "@shadcn/components/button";
 import { HStack, VStack, Box } from "@/components/layout/Stack";
 import { MockupVisual } from "@/components/landing/MockupVisual";
+import { Stats } from "@/components/landing/Stats";
+import { Diferenciais } from "@/components/landing/Diferenciais";
+import { AntesDepois } from "@/components/landing/AntesDepois";
+import { StackCompleta } from "@/components/landing/StackCompleta";
+import { LinhaDoTempo } from "@/components/landing/LinhaDoTempo";
 import { ArrowRight, Code, Zap, Shield, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 import { fadeInUp, containerStagger } from "@/utils/animacoes";
@@ -70,6 +75,31 @@ export function Component() {
           {/* Visual Mockup */}
           <MockupVisual />
         </motion.div>
+      </Container>
+
+      {/* Stats Section */}
+      <Container className="py-24">
+        <Stats />
+      </Container>
+
+      {/* Diferenciais Section */}
+      <Container className="py-24">
+        <Diferenciais />
+      </Container>
+
+      {/* Antes Depois Section */}
+      <Container className="py-24">
+        <AntesDepois />
+      </Container>
+
+      {/* Stack Section */}
+      <Container className="py-24">
+        <StackCompleta />
+      </Container>
+
+      {/* Timeline Section */}
+      <Container className="py-24">
+        <LinhaDoTempo />
       </Container>
 
       {/* Grid de Benefícios Iniciais */}
