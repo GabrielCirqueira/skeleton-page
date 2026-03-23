@@ -18,7 +18,7 @@ export function Quote() {
       </Box>
       <Title
         variant="h2"
-        className="max-w-4xl text-2xl md:text-5xl text-white italic font-serif leading-tight px-4"
+        className="max-w-4xl text-2xl md:text-5xl text-typography-950 italic font-serif leading-tight px-4"
       >
         "O Catalyst Skeleton não é sobre dar o peixe, é sobre dar o{" "}
         <span className="text-brand-500">barco de pesca</span> de elite para você dominar o oceano

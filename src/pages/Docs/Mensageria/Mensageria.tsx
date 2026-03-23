@@ -9,7 +9,7 @@ export function Component() {
     <VStack gap={12} className="pb-20">
       <VStack gap={4}>
         <Badge variant="brand">Performance</Badge>
-        <Title variant="h1" id="mensageria" className="text-4xl md:text-5xl text-white">
+        <Title variant="h1" id="mensageria" className="text-4xl md:text-5xl text-typography-950">
           Mensageria e <span className="text-brand-500">Workers</span>
         </Title>
         <Text variant="lg" className="text-typography-400 max-w-2xl">
@@ -21,7 +21,11 @@ export function Component() {
       {/* Processamento Assíncrono */}
       <section id="async">
         <VStack gap={6}>
-          <Title variant="h2" id="processamento-background" className="text-2xl text-white pt-8">
+          <Title
+            variant="h2"
+            id="processamento-background"
+            className="text-2xl text-typography-950 pt-8"
+          >
             Processamento em Segundo Plano
           </Title>
           <Text className="text-typography-400">
@@ -32,7 +36,7 @@ export function Component() {
             <Card className="border-brand-500/10 bg-brand-500/[0.02]">
               <HStack gap={3} className="mb-2">
                 <Zap className="size-4 text-brand-500" />
-                <Title variant="h4" className="text-white text-base">
+                <Title variant="h4" className="text-typography-950 text-base">
                   Instantaneidade
                 </Title>
               </HStack>
@@ -43,7 +47,7 @@ export function Component() {
             <Card className="border-brand-500/10 bg-brand-500/[0.02]">
               <HStack gap={3} className="mb-2">
                 <Share2 className="size-4 text-brand-500" />
-                <Title variant="h4" className="text-white text-base">
+                <Title variant="h4" className="text-typography-950 text-base">
                   Retentativas
                 </Title>
               </HStack>
@@ -58,7 +62,11 @@ export function Component() {
       {/* Message & Handler */}
       <section id="handler">
         <VStack gap={6}>
-          <Title variant="h2" id="implementacao-messenger" className="text-2xl text-white pt-8">
+          <Title
+            variant="h2"
+            id="implementacao-messenger"
+            className="text-2xl text-typography-950 pt-8"
+          >
             Mensagens e Handlers
           </Title>
           <Text className="text-typography-400">
@@ -82,7 +90,7 @@ final class EnviarEmailBemVindoHandler
       {/* Infra de Workers */}
       <section id="infra">
         <VStack gap={6}>
-          <Title variant="h2" id="supervisor-workers" className="text-2xl text-white pt-8">
+          <Title variant="h2" id="supervisor-workers" className="text-2xl text-typography-950 pt-8">
             Workers e Supervisord
           </Title>
           <Callout variant="info">
@@ -96,7 +104,7 @@ final class EnviarEmailBemVindoHandler
             >
               <Cpu className="size-5 text-brand-500 shrink-0" />
               <VStack gap={1}>
-                <Text className="text-white font-black">Transporte Doctrine</Text>
+                <Text className="text-typography-950 font-black">Transporte Doctrine</Text>
                 <Text variant="sm" className="text-typography-400">
                   As mensagens são guardadas temporariamente no MySQL (não exige Redis no início).
                 </Text>
@@ -108,7 +116,7 @@ final class EnviarEmailBemVindoHandler
             >
               <Activity className="size-5 text-brand-500 shrink-0" />
               <VStack gap={1}>
-                <Text className="text-white font-black">Painel de Controle</Text>
+                <Text className="text-typography-950 font-black">Painel de Controle</Text>
                 <Text variant="sm" className="text-typography-400">
                   Acesse o painel do Supervisor na porta 1011 para ver o estado das filas.
                 </Text>
@@ -125,7 +133,7 @@ final class EnviarEmailBemVindoHandler
           className="items-center bg-brand-500/[0.03] p-8 rounded-3xl border border-brand-500/20"
         >
           <VStack gap={2}>
-            <Title variant="h3" className="text-white">
+            <Title variant="h3" className="text-typography-950">
               Qualidade de Código
             </Title>
             <Text className="text-typography-400">

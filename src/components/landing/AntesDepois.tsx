@@ -8,7 +8,7 @@ import { fadeInUp } from "@/utils/animacoes";
 export function AntesDepois() {
   return (
     <VStack gap={12} className="py-24">
-      <Title variant="h2" className="text-center text-white mb-4">
+      <Title variant="h2" className="text-center text-typography-950 mb-4">
         O contraste é <span className="text-brand-500">gritante.</span>
       </Title>
 
@@ -74,10 +74,10 @@ export function AntesDepois() {
               <VStack gap={4}>
                 <HStack
                   gap={4}
-                  className="text-white font-bold p-3 bg-brand-500/10 rounded-lg border border-brand-500/20"
+                  className="text-typography-950 font-bold p-3 bg-brand-500/10 rounded-lg border border-brand-500/20"
                 >
                   <Zap className="w-5 h-5 text-brand-500 fill-brand-500" />
-                  <Text className="text-white">Dia 1: bash setup.sh</Text>
+                  <Text className="text-typography-950">Dia 1: bash setup.sh</Text>
                 </HStack>
                 <HStack gap={4} className="text-brand-500 font-bold p-3">
                   <ArrowRight className="w-5 h-5" />

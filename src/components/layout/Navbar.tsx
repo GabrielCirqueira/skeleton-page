@@ -38,7 +38,7 @@ export function Navbar() {
                 </svg>
               </div>
             </div>
-            <Title variant="h3" className="font-poppins text-white">
+            <Title variant="h3" className="font-poppins text-typography-950">
               Catalyst <span className="text-brand-500">Skeleton</span>
             </Title>
           </Link>
@@ -49,7 +49,7 @@ export function Navbar() {
               <Link
                 key={link.href}
                 to={link.href}
-                className="text-sm font-semibold text-typography-400 hover:text-white transition-colors"
+                className="text-sm font-semibold text-typography-400 hover:text-typography-950 transition-colors"
               >
                 {link.name}
               </Link>
@@ -74,7 +74,7 @@ export function Navbar() {
           {/* Mobile Toggle */}
           <HStack gap={2} className="md:hidden">
             <ThemeToggle />
-            <button className="text-white p-2" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            <button className="text-typography-950 p-2" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               {isMenuOpen ? <X /> : <Menu />}
             </button>
           </HStack>

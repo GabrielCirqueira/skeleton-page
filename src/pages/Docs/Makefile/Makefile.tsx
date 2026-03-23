@@ -9,7 +9,7 @@ export function Component() {
     <VStack gap={12} className="pb-20">
       <VStack gap={4}>
         <Badge variant="brand">Produtividade</Badge>
-        <Title variant="h1" id="makefile" className="text-4xl md:text-5xl text-white">
+        <Title variant="h1" id="makefile" className="text-4xl md:text-5xl text-typography-950">
           A Magia do <span className="text-brand-500">Makefile</span>
         </Title>
         <Text variant="lg" className="text-typography-400 max-w-2xl">
@@ -21,7 +21,11 @@ export function Component() {
       {/* Por que Makefile? */}
       <section id="why">
         <VStack gap={6}>
-          <Title variant="h2" id="produtividade-terminal" className="text-2xl text-white pt-8">
+          <Title
+            variant="h2"
+            id="produtividade-terminal"
+            className="text-2xl text-typography-950 pt-8"
+          >
             Por que usar Makefile?
           </Title>
           <Text className="text-typography-400">
@@ -32,7 +36,7 @@ export function Component() {
             <Card className="border-brand-500/10 bg-brand-500/[0.02]">
               <HStack gap={3} className="mb-2">
                 <Zap className="size-4 text-brand-500" />
-                <Title variant="h4" className="text-white text-base">
+                <Title variant="h4" className="text-typography-950 text-base">
                   Velocidade
                 </Title>
               </HStack>
@@ -43,7 +47,7 @@ export function Component() {
             <Card className="border-brand-500/10 bg-brand-500/[0.02]">
               <HStack gap={3} className="mb-2">
                 <Lightbulb className="size-4 text-brand-500" />
-                <Title variant="h4" className="text-white text-base">
+                <Title variant="h4" className="text-typography-950 text-base">
                   Padronização
                 </Title>
               </HStack>
@@ -58,7 +62,11 @@ export function Component() {
       {/* Comandos Essenciais */}
       <section id="commands">
         <VStack gap={6}>
-          <Title variant="h2" id="comandos-essenciais" className="text-2xl text-white pt-8">
+          <Title
+            variant="h2"
+            id="comandos-essenciais"
+            className="text-2xl text-typography-950 pt-8"
+          >
             Comandos Essenciais
           </Title>
           <div className="space-y-4">
@@ -83,7 +91,7 @@ make cc      # Limpa o cache do Symfony`}
       {/* Logs e Debug */}
       <section id="logs">
         <VStack gap={6}>
-          <Title variant="h2" id="gestao-logs" className="text-2xl text-white pt-8">
+          <Title variant="h2" id="gestao-logs" className="text-2xl text-typography-950 pt-8">
             Logs e Monitoramento
           </Title>
           <Callout variant="tip">
@@ -107,7 +115,7 @@ make cc      # Limpa o cache do Symfony`}
           className="items-center bg-brand-500/[0.03] p-8 rounded-3xl border border-brand-500/20"
         >
           <VStack gap={2}>
-            <Title variant="h3" className="text-white">
+            <Title variant="h3" className="text-typography-950">
               Dicionário de Nomenclatura
             </Title>
             <Text className="text-typography-400">

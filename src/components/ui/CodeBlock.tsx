@@ -39,7 +39,7 @@ export function CodeBlock({ code, language = "bash", className, title }: CodeBlo
         </pre>
         <button
           onClick={copyToClipboard}
-          className="absolute top-4 right-4 p-2 rounded-lg bg-background-900 border border-outline-900 text-typography-400 hover:text-white transition-all opacity-0 group-hover:opacity-100"
+          className="absolute top-4 right-4 p-2 rounded-lg bg-background-900 border border-outline-900 text-typography-400 hover:text-typography-950 transition-all opacity-0 group-hover:opacity-100"
           title="Copiar código"
         >
           {copied ? <Check className="w-4 h-4 text-brand-500" /> : <Copy className="w-4 h-4" />}

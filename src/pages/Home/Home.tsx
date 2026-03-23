@@ -66,7 +66,7 @@ export function Component() {
             >
               <Icon icon={theme === "light" ? Moon : Sun} className="size-5" />
             </Button>
-            <Button className=" text-white rounded-full bg-brand-600 hover:bg-brand-700 dark:bg-brand-500 dark:hover:bg-brand-600 transition-all duration-300 shadow-hard-2">
+            <Button className=" text-typography-950 rounded-full bg-brand-600 hover:bg-brand-700 dark:bg-brand-500 dark:hover:bg-brand-600 transition-all duration-300 shadow-hard-2">
               Começar
             </Button>
           </HStack>
@@ -104,7 +104,7 @@ export function Component() {
             <HStack className="gap-4 flex-wrap">
               <Button
                 size="lg"
-                className="rounded-full bg-brand-600 hover:bg-brand-700 dark:bg-brand-500 dark:hover:bg-brand-600 text-white font-semibold px-8 py-6 shadow-hard-3 hover:shadow-hard-4 transition-all duration-300 hover:scale-105"
+                className="rounded-full bg-brand-600 hover:bg-brand-700 dark:bg-brand-500 dark:hover:bg-brand-600 text-typography-950 font-semibold px-8 py-6 shadow-hard-3 hover:shadow-hard-4 transition-all duration-300 hover:scale-105"
                 onClick={() => setShowModal(true)}
               >
                 <HStack className="gap-2 items-center">
@@ -140,7 +140,10 @@ export function Component() {
               <VStack className="gap-4">
                 <HStack className="gap-2 items-center">
                   <Icon icon={Terminal} className="size-6 text-brand-600 dark:text-brand-400" />
-                  <Title size="lg" className="font-heading font-bold text-zinc-900 dark:text-white">
+                  <Title
+                    size="lg"
+                    className="font-heading font-bold text-zinc-900 dark:text-typography-950"
+                  >
                     Instalação rápida
                   </Title>
                 </HStack>
@@ -210,7 +213,10 @@ export function Component() {
             >
               Features
             </Badge>
-            <Title size="3xl" className="font-heading font-black text-zinc-900 dark:text-white">
+            <Title
+              size="3xl"
+              className="font-heading font-black text-zinc-900 dark:text-typography-950"
+            >
               Tudo que você precisa para começar
             </Title>
             <Text size="lg" className="text-zinc-600">
@@ -279,7 +285,7 @@ export function Component() {
                   <VStack className="gap-2">
                     <Title
                       size="lg"
-                      className="font-heading font-bold text-zinc-900 dark:text-white"
+                      className="font-heading font-bold text-zinc-900 dark:text-typography-950"
                     >
                       {feature.title}
                     </Title>
@@ -307,7 +313,10 @@ export function Component() {
             >
               <VStack className="gap-3 items-center">
                 <Icon icon={stat.icon} className="size-8 text-brand-600 dark:text-brand-400" />
-                <Title size="3xl" className="font-heading font-black text-zinc-900 dark:text-white">
+                <Title
+                  size="3xl"
+                  className="font-heading font-black text-zinc-900 dark:text-typography-950"
+                >
                   {stat.value}
                 </Title>
                 <Text className="text-zinc-600 font-semibold">{stat.label}</Text>
@@ -327,7 +336,7 @@ export function Component() {
               >
                 Nossos Valores
               </Badge>
-              <Title size="3xl" className="font-heading font-black text-white">
+              <Title size="3xl" className="font-heading font-black text-typography-950">
                 Construído com propósito
               </Title>
               <Text size="lg" className="text-zinc-400">
@@ -366,7 +375,7 @@ export function Component() {
                       <Icon icon={value.icon} className="size-8 text-brand-400" />
                     </Box>
                     <VStack className="gap-3">
-                      <Title size="xl" className="font-heading font-bold text-white">
+                      <Title size="xl" className="font-heading font-bold text-typography-950">
                         {value.title}
                       </Title>
                       <Text size="lg" className="text-zinc-400 leading-relaxed">
@@ -406,7 +415,7 @@ export function Component() {
               <Button
                 size="lg"
                 variant="outline"
-                className="rounded-full border-2 border-white/30 hover:border-white text-white hover:bg-white/10 font-bold px-10 py-7 transition-all duration-300 hover:scale-110"
+                className="rounded-full border-2 border-white/30 hover:border-white text-typography-950 hover:bg-white/10 font-bold px-10 py-7 transition-all duration-300 hover:scale-110"
               >
                 <HStack className="gap-2 items-center">
                   <Icon icon={BarChart} className="size-6" />
@@ -424,7 +433,10 @@ export function Component() {
             <VStack className="gap-4">
               <HStack className="gap-2 items-center">
                 <Icon icon={Code2} className="size-7 text-brand-600 dark:text-brand-400" />
-                <Title size="lg" className="font-heading font-bold text-zinc-900 dark:text-white">
+                <Title
+                  size="lg"
+                  className="font-heading font-bold text-zinc-900 dark:text-typography-950"
+                >
                   React Skeleton
                 </Title>
               </HStack>
@@ -434,7 +446,10 @@ export function Component() {
             </VStack>
 
             <VStack className="gap-4">
-              <Title size="sm" className="font-heading font-bold text-zinc-900 dark:text-white">
+              <Title
+                size="sm"
+                className="font-heading font-bold text-zinc-900 dark:text-typography-950"
+              >
                 Produto
               </Title>
               <VStack className="gap-2">
@@ -460,7 +475,10 @@ export function Component() {
             </VStack>
 
             <VStack className="gap-4">
-              <Title size="sm" className="font-heading font-bold text-zinc-900 dark:text-white">
+              <Title
+                size="sm"
+                className="font-heading font-bold text-zinc-900 dark:text-typography-950"
+              >
                 Recursos
               </Title>
               <VStack className="gap-2">
@@ -486,7 +504,10 @@ export function Component() {
             </VStack>
 
             <VStack className="gap-4">
-              <Title size="sm" className="font-heading font-bold text-zinc-900 dark:text-white">
+              <Title
+                size="sm"
+                className="font-heading font-bold text-zinc-900 dark:text-typography-950"
+              >
                 Legal
               </Title>
               <VStack className="gap-2">
@@ -544,7 +565,10 @@ export function Component() {
                 <Box className="w-20 h-20 mx-auto rounded-2xl bg-brand-100 dark:bg-brand-900 flex items-center justify-center">
                   <Icon icon={Rocket} className="size-10 text-brand-600 dark:text-brand-400" />
                 </Box>
-                <Title size="2xl" className="font-heading font-bold text-zinc-900 dark:text-white">
+                <Title
+                  size="2xl"
+                  className="font-heading font-bold text-zinc-900 dark:text-typography-950"
+                >
                   Demonstração Interativa
                 </Title>
                 <Text size="lg" className="text-zinc-600">
@@ -560,7 +584,7 @@ export function Component() {
                       className="size-6 text-green-600 dark:text-green-400 mt-0.5"
                     />
                     <VStack className="gap-1">
-                      <Text className="font-semibold text-zinc-900 dark:text-white">
+                      <Text className="font-semibold text-zinc-900 dark:text-typography-950">
                         80+ Componentes shadcn/ui
                       </Text>
                       <Text className="text-sm text-zinc-600">
@@ -574,7 +598,7 @@ export function Component() {
                       className="size-6 text-green-600 dark:text-green-400 mt-0.5"
                     />
                     <VStack className="gap-1">
-                      <Text className="font-semibold text-zinc-900 dark:text-white">
+                      <Text className="font-semibold text-zinc-900 dark:text-typography-950">
                         Tema Dark/Light
                       </Text>
                       <Text className="text-sm text-zinc-600">
@@ -588,7 +612,7 @@ export function Component() {
                       className="size-6 text-green-600 dark:text-green-400 mt-0.5"
                     />
                     <VStack className="gap-1">
-                      <Text className="font-semibold text-zinc-900 dark:text-white">
+                      <Text className="font-semibold text-zinc-900 dark:text-typography-950">
                         Animações Fluidas
                       </Text>
                       <Text className="text-sm text-zinc-600">

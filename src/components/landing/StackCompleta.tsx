@@ -27,7 +27,7 @@ export function StackCompleta() {
   return (
     <VStack gap={16} className="py-24 border-t border-outline-900/50">
       <VStack gap={4} className="text-center mx-auto max-w-2xl">
-        <Title variant="h2" className="text-white">
+        <Title variant="h2" className="text-typography-950">
           Stack completa. <span className="text-brand-500">Zero decisões pendentes.</span>
         </Title>
         <Text variant="lg" className="text-typography-400">
@@ -47,7 +47,7 @@ export function StackCompleta() {
           <Card className="h-full border-brand-500/10">
             <VStack gap={8}>
               <HStack justify="between">
-                <Title variant="h3" className="text-white">
+                <Title variant="h3" className="text-typography-950">
                   Backend
                 </Title>
                 <Badge variant="brand">Empresarial</Badge>
@@ -59,7 +59,7 @@ export function StackCompleta() {
                     justify="between"
                     className="p-3 rounded-lg bg-background-950/50 border border-outline-900 group hover:border-brand-500/30 transition-all"
                   >
-                    <Text className="text-white font-bold">{tech.name}</Text>
+                    <Text className="text-typography-950 font-bold">{tech.name}</Text>
                     <Text variant="sm" className="text-typography-400">
                       {tech.role}
                     </Text>
@@ -80,7 +80,7 @@ export function StackCompleta() {
           <Card className="h-full border-brand-500/10">
             <VStack gap={8}>
               <HStack justify="between">
-                <Title variant="h3" className="text-white">
+                <Title variant="h3" className="text-typography-950">
                   Frontend
                 </Title>
                 <Badge variant="brand">Moderno</Badge>
@@ -92,7 +92,7 @@ export function StackCompleta() {
                     justify="between"
                     className="p-3 rounded-lg bg-background-950/50 border border-outline-900 group hover:border-brand-500/30 transition-all"
                   >
-                    <Text className="text-white font-bold">{tech.name}</Text>
+                    <Text className="text-typography-950 font-bold">{tech.name}</Text>
                     <Text variant="sm" className="text-typography-400">
                       {tech.role}
                     </Text>

@@ -77,7 +77,7 @@ export function DocSidebar({ className }: { className?: string }) {
                       "px-3 py-2 text-sm font-bold rounded-lg transition-all flex items-center gap-2 border border-transparent",
                       isActive
                         ? "bg-brand-500/10 text-brand-500 border-brand-500/20 shadow-[0_0_15px_rgba(28,195,157,0.05)]"
-                        : "text-typography-400 hover:text-white hover:bg-background-800"
+                        : "text-typography-400 hover:text-typography-950 hover:bg-background-800"
                     )
                   }
                 >

@@ -10,7 +10,7 @@ export function Component() {
       {/* Hero da Doc */}
       <VStack gap={4}>
         <Badge variant="brand">Versão 4.0.0 — Estável</Badge>
-        <Title variant="h1" id="introducao" className="text-4xl md:text-5xl text-white">
+        <Title variant="h1" id="introducao" className="text-4xl md:text-5xl text-typography-950">
           Introdução ao <span className="text-brand-500">Catalyst Skeleton</span>
         </Title>
         <Text variant="lg" className="text-typography-400 max-w-2xl">
@@ -22,7 +22,7 @@ export function Component() {
       {/* Visão Geral */}
       <section id="visao-geral">
         <VStack gap={6}>
-          <Title variant="h2" id="oque-e" className="text-2xl text-white pt-8">
+          <Title variant="h2" id="oque-e" className="text-2xl text-typography-950 pt-8">
             O que é o Catalyst?
           </Title>
           <Text className="text-typography-400 leading-relaxed">
@@ -37,7 +37,7 @@ export function Component() {
                 <Box className="size-10 rounded-lg bg-brand-500/10 flex items-center justify-center text-brand-500">
                   <ShieldCheck className="size-5" />
                 </Box>
-                <Title variant="h4" className="text-white">
+                <Title variant="h4" className="text-typography-950">
                   Seguro por Padrão
                 </Title>
               </HStack>
@@ -50,7 +50,7 @@ export function Component() {
                 <Box className="size-10 rounded-lg bg-brand-500/10 flex items-center justify-center text-brand-500">
                   <Zap className="size-5" />
                 </Box>
-                <Title variant="h4" className="text-white">
+                <Title variant="h4" className="text-typography-950">
                   Produtividade Real
                 </Title>
               </HStack>
@@ -65,7 +65,7 @@ export function Component() {
       {/* Histórico */}
       <section id="historico">
         <VStack gap={6}>
-          <Title variant="h2" id="versoes" className="text-2xl text-white pt-8">
+          <Title variant="h2" id="versoes" className="text-2xl text-typography-950 pt-8">
             Histórico de Versões
           </Title>
           <div className="overflow-x-auto rounded-xl border border-outline-900 bg-background-900/50">
@@ -82,7 +82,7 @@ export function Component() {
               </thead>
               <tbody className="text-sm font-bold text-typography-400">
                 <tr className="border-b border-outline-900/50">
-                  <td className="px-6 py-4 text-white">Skeleton V4</td>
+                  <td className="px-6 py-4 text-typography-950">Skeleton V4</td>
                   <td className="px-6 py-4 italic">Atual — Symfony 7.3, React 19, Biome.</td>
                 </tr>
                 <tr className="border-b border-outline-900/50">
@@ -104,7 +104,7 @@ export function Component() {
       {/* Pré-requisitos */}
       <section id="pre-requisitos">
         <VStack gap={6}>
-          <Title variant="h2" id="requisitos" className="text-2xl text-white pt-8">
+          <Title variant="h2" id="requisitos" className="text-2xl text-typography-950 pt-8">
             Pré-requisitos
           </Title>
           <Callout variant="info">
@@ -118,7 +118,7 @@ export function Component() {
             >
               <HStack gap={3}>
                 <Terminal className="size-4 text-brand-500" />
-                <Text className="font-bold text-white">Docker + Docker Compose v2</Text>
+                <Text className="font-bold text-typography-950">Docker + Docker Compose v2</Text>
               </HStack>
               <Badge variant="neutral">Obrigatório</Badge>
             </HStack>
@@ -128,7 +128,7 @@ export function Component() {
             >
               <HStack gap={3}>
                 <Clock className="size-4 text-brand-500" />
-                <Text className="font-bold text-white">Git 2.x+</Text>
+                <Text className="font-bold text-typography-950">Git 2.x+</Text>
               </HStack>
               <Badge variant="neutral">Obrigatório</Badge>
             </HStack>
@@ -139,7 +139,7 @@ export function Component() {
       {/* Setup */}
       <section id="setup">
         <VStack gap={6}>
-          <Title variant="h2" id="setup-inicial" className="text-2xl text-white pt-8">
+          <Title variant="h2" id="setup-inicial" className="text-2xl text-typography-950 pt-8">
             Setup Inicial
           </Title>
           <Text className="text-typography-400 leading-relaxed">
@@ -169,7 +169,7 @@ export function Component() {
           className="items-center bg-brand-500/[0.03] p-8 rounded-3xl border border-brand-500/20"
         >
           <VStack gap={2}>
-            <Title variant="h3" className="text-white">
+            <Title variant="h3" className="text-typography-950">
               Fundamentos Sólidos
             </Title>
             <Text className="text-typography-400">

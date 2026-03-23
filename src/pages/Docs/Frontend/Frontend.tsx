@@ -9,7 +9,7 @@ export function Component() {
     <VStack gap={12} className="pb-20">
       <VStack gap={4}>
         <Badge variant="brand">Experiência</Badge>
-        <Title variant="h1" id="frontend" className="text-4xl md:text-5xl text-white">
+        <Title variant="h1" id="frontend" className="text-4xl md:text-5xl text-typography-950">
           Arquitetura de <span className="text-brand-500">Frontend</span>
         </Title>
         <Text variant="lg" className="text-typography-400 max-w-2xl">
@@ -21,7 +21,7 @@ export function Component() {
       {/* Estrutura por Features */}
       <section id="features">
         <VStack gap={6}>
-          <Title variant="h2" id="estrutura-features" className="text-2xl text-white pt-8">
+          <Title variant="h2" id="estrutura-features" className="text-2xl text-typography-950 pt-8">
             Estrutura baseada em Features
           </Title>
           <Text className="text-typography-400">
@@ -32,7 +32,7 @@ export function Component() {
             <Card className="border-brand-500/10 bg-brand-500/[0.02]">
               <HStack gap={3} className="mb-2">
                 <Share2 className="size-4 text-brand-500" />
-                <Title variant="h4" className="text-white text-base">
+                <Title variant="h4" className="text-typography-950 text-base">
                   Isolamento
                 </Title>
               </HStack>
@@ -43,7 +43,7 @@ export function Component() {
             <Card className="border-brand-500/10 bg-brand-500/[0.02]">
               <HStack gap={3} className="mb-2">
                 <Layers className="size-4 text-brand-500" />
-                <Title variant="h4" className="text-white text-base">
+                <Title variant="h4" className="text-typography-950 text-base">
                   Shared
                 </Title>
               </HStack>
@@ -58,7 +58,7 @@ export function Component() {
       {/* Banimento do useEffect */}
       <section id="use-effect">
         <VStack gap={6}>
-          <Title variant="h2" id="banimento-effect" className="text-2xl text-white pt-8">
+          <Title variant="h2" id="banimento-effect" className="text-2xl text-typography-950 pt-8">
             O Banimento do useEffect
           </Title>
           <Callout variant="warning">
@@ -77,7 +77,7 @@ export function Component() {
             >
               <Ban className="size-5 text-red-500 shrink-0" />
               <VStack gap={1}>
-                <Text className="text-white font-black">Lógica reativa</Text>
+                <Text className="text-typography-950 font-black">Lógica reativa</Text>
                 <Text variant="sm" className="text-typography-400">
                   Mantenha a lógica dentro do ciclo de renderização através de <code>useMemo</code>{" "}
                   ou variáveis locais.
@@ -91,7 +91,7 @@ export function Component() {
       {/* Estado do Servidor */}
       <section id="query">
         <VStack gap={6}>
-          <Title variant="h2" id="server-state" className="text-2xl text-white pt-8">
+          <Title variant="h2" id="server-state" className="text-2xl text-typography-950 pt-8">
             Estado do Servidor (Query)
           </Title>
           <Text className="text-typography-400">
@@ -115,14 +115,14 @@ export function Component() {
       {/* Interface e Design */}
       <section id="ui">
         <VStack gap={6}>
-          <Title variant="h2" id="design-system" className="text-2xl text-white pt-8">
+          <Title variant="h2" id="design-system" className="text-2xl text-typography-950 pt-8">
             Design System & UI
           </Title>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <Card className="border-brand-500/10 bg-brand-500/[0.02]">
               <VStack gap={3}>
                 <Palette className="size-5 text-brand-500" />
-                <Title variant="h4" className="text-white text-sm uppercase">
+                <Title variant="h4" className="text-typography-950 text-sm uppercase">
                   Tailwind CSS
                 </Title>
                 <Text variant="sm" className="text-typography-400">
@@ -133,7 +133,7 @@ export function Component() {
             <Card className="border-brand-500/10 bg-brand-500/[0.02]">
               <VStack gap={3}>
                 <Sparkles className="size-5 text-brand-500" />
-                <Title variant="h4" className="text-white text-sm uppercase">
+                <Title variant="h4" className="text-typography-950 text-sm uppercase">
                   Framer Motion
                 </Title>
                 <Text variant="sm" className="text-typography-400">
@@ -144,7 +144,7 @@ export function Component() {
             <Card className="border-brand-500/10 bg-brand-500/[0.02]">
               <VStack gap={3}>
                 <Smartphone className="size-5 text-brand-500" />
-                <Title variant="h4" className="text-white text-sm uppercase">
+                <Title variant="h4" className="text-typography-950 text-sm uppercase">
                   Mobile First
                 </Title>
                 <Text variant="sm" className="text-typography-400">
@@ -163,7 +163,7 @@ export function Component() {
           className="items-center bg-brand-500/[0.03] p-8 rounded-3xl border border-brand-500/20"
         >
           <VStack gap={2}>
-            <Title variant="h3" className="text-white">
+            <Title variant="h3" className="text-typography-950">
               Persistência de Dados
             </Title>
             <Text className="text-typography-400">

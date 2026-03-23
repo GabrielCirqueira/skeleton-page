@@ -40,7 +40,7 @@ export function Component() {
           </motion.div>
 
           <motion.div variants={fadeInUp}>
-            <Title variant="display" className="max-w-4xl text-white mb-8">
+            <Title variant="display" className="max-w-4xl text-typography-950 mb-8">
               Arquitetura de elite para <span className="text-brand-500">SaaS modernos</span> com
               tecnologia de ponta.
             </Title>

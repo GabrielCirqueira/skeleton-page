@@ -9,7 +9,7 @@ export function Component() {
     <VStack gap={12} className="pb-20">
       <VStack gap={4}>
         <Badge variant="brand">Segurança</Badge>
-        <Title variant="h1" id="autenticacao" className="text-4xl md:text-5xl text-white">
+        <Title variant="h1" id="autenticacao" className="text-4xl md:text-5xl text-typography-950">
           Guia de <span className="text-brand-500">Autenticação</span>
         </Title>
         <Text variant="lg" className="text-typography-400 max-w-2xl">
@@ -21,7 +21,7 @@ export function Component() {
       {/* Estrutura de Tokens */}
       <section id="tokens">
         <VStack gap={6}>
-          <Title variant="h2" id="estrutura-tokens" className="text-2xl text-white pt-8">
+          <Title variant="h2" id="estrutura-tokens" className="text-2xl text-typography-950 pt-8">
             Estrutura de Tokens
           </Title>
           <Text className="text-typography-400">
@@ -32,7 +32,7 @@ export function Component() {
             <Card className="border-brand-500/10 bg-brand-500/[0.02]">
               <HStack gap={3} className="mb-4">
                 <Key className="size-5 text-brand-500" />
-                <Title variant="h4" className="text-white">
+                <Title variant="h4" className="text-typography-950">
                   Access Token
                 </Title>
               </HStack>
@@ -46,7 +46,7 @@ export function Component() {
             <Card className="border-brand-500/10 bg-brand-500/[0.02]">
               <HStack gap={3} className="mb-4">
                 <RefreshCw className="size-5 text-brand-500" />
-                <Title variant="h4" className="text-white">
+                <Title variant="h4" className="text-typography-950">
                   Refresh Token
                 </Title>
               </HStack>
@@ -64,7 +64,7 @@ export function Component() {
       {/* Interceptor Axios */}
       <section id="interceptores">
         <VStack gap={6}>
-          <Title variant="h2" id="axios-interceptors" className="text-2xl text-white pt-8">
+          <Title variant="h2" id="axios-interceptors" className="text-2xl text-typography-950 pt-8">
             Interceptores Axios
           </Title>
           <Callout variant="info">
@@ -97,7 +97,7 @@ export function Component() {
       {/* Auth Store */}
       <section id="store">
         <VStack gap={6}>
-          <Title variant="h2" id="zustand-store" className="text-2xl text-white pt-8">
+          <Title variant="h2" id="zustand-store" className="text-2xl text-typography-950 pt-8">
             Gestão de Estado (Zustand)
           </Title>
           <Text className="text-typography-400">
@@ -126,13 +126,13 @@ export function Component() {
       {/* Firewall */}
       <section id="seguranca">
         <VStack gap={6}>
-          <Title variant="h2" id="firewall-symfony" className="text-2xl text-white pt-8">
+          <Title variant="h2" id="firewall-symfony" className="text-2xl text-typography-950 pt-8">
             Firewall Symfony
           </Title>
           <VStack gap={4} className="bg-background-950 p-6 rounded-2xl border border-outline-900">
             <HStack gap={3}>
               <Lock className="size-5 text-brand-500" />
-              <Text className="text-white font-black">Stateless: True</Text>
+              <Text className="text-typography-950 font-black">Stateless: True</Text>
             </HStack>
             <Text variant="sm" className="text-typography-400">
               O backend não usa sessões PHP tradidionais. Cada requisição é validada de forma
@@ -149,7 +149,7 @@ export function Component() {
           className="items-center bg-brand-500/[0.03] p-8 rounded-3xl border border-brand-500/20"
         >
           <VStack gap={2}>
-            <Title variant="h3" className="text-white">
+            <Title variant="h3" className="text-typography-950">
               Padrões de Backend
             </Title>
             <Text className="text-typography-400">

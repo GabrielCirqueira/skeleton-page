@@ -3,8 +3,29 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --background-950: #ffffff;
+    --background-900: #f9fafb;
+    --background-800: #f3f4f6;
+    --typography-950: #0a0a0a;
+    --typography-900: #171717;
+    --typography-400: #525252;
+    --outline-900: #e5e7eb;
+  }
+
+  .dark {
+    --background-950: #030712;
+    --background-900: #111827;
+    --background-800: #1f2937;
+    --typography-950: #fafafa;
+    --typography-900: #f5f5f5;
+    --typography-400: #a3a3a3;
+    --outline-900: #111827;
+  }
+
   body {
-    @apply text-gray-700 dark:text-gray-300;
-    @apply bg-white dark:bg-brand-950;
+    @apply transition-colors duration-300;
+    background-color: var(--background-950);
+    color: var(--typography-900);
   }
 }

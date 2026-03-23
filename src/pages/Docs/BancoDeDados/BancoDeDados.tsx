@@ -9,7 +9,11 @@ export function Component() {
     <VStack gap={12} className="pb-20">
       <VStack gap={4}>
         <Badge variant="brand">Persistência</Badge>
-        <Title variant="h1" id="banco-de-dados" className="text-4xl md:text-5xl text-white">
+        <Title
+          variant="h1"
+          id="banco-de-dados"
+          className="text-4xl md:text-5xl text-typography-950"
+        >
           Banco de Dados e <span className="text-brand-500">Doctrine</span>
         </Title>
         <Text variant="lg" className="text-typography-400 max-w-2xl">
@@ -21,7 +25,7 @@ export function Component() {
       {/* UUID v7 */}
       <section id="uuid">
         <VStack gap={6}>
-          <Title variant="h2" id="id-uuidv7" className="text-2xl text-white pt-8">
+          <Title variant="h2" id="id-uuidv7" className="text-2xl text-typography-950 pt-8">
             UUID v7 como Chave Primária
           </Title>
           <Text className="text-typography-400">
@@ -33,7 +37,7 @@ export function Component() {
             <Card className="border-brand-500/10 bg-brand-500/[0.02]">
               <HStack gap={3} className="mb-2">
                 <Hash className="size-4 text-brand-500" />
-                <Title variant="h4" className="text-white text-base">
+                <Title variant="h4" className="text-typography-950 text-base">
                   Segurança
                 </Title>
               </HStack>
@@ -44,7 +48,7 @@ export function Component() {
             <Card className="border-brand-500/10 bg-brand-500/[0.02]">
               <HStack gap={3} className="mb-2">
                 <ListOrdered className="size-4 text-brand-500" />
-                <Title variant="h4" className="text-white text-base">
+                <Title variant="h4" className="text-typography-950 text-base">
                   Ordenação
                 </Title>
               </HStack>
@@ -59,7 +63,11 @@ export function Component() {
       {/* Doctrine Migrations */}
       <section id="migrations">
         <VStack gap={6}>
-          <Title variant="h2" id="versionamento-schema" className="text-2xl text-white pt-8">
+          <Title
+            variant="h2"
+            id="versionamento-schema"
+            className="text-2xl text-typography-950 pt-8"
+          >
             Doctrine Migrations
           </Title>
           <Text className="text-typography-400">
@@ -83,7 +91,7 @@ make migrate`}
       {/* Paginação */}
       <section id="paginacao">
         <VStack gap={6}>
-          <Title variant="h2" id="padrao-paginacao" className="text-2xl text-white pt-8">
+          <Title variant="h2" id="padrao-paginacao" className="text-2xl text-typography-950 pt-8">
             Padrão de Paginação
           </Title>
           <Callout variant="tip">
@@ -121,7 +129,7 @@ make migrate`}
           className="items-center bg-brand-500/[0.03] p-8 rounded-3xl border border-brand-500/20"
         >
           <VStack gap={2}>
-            <Title variant="h3" className="text-white">
+            <Title variant="h3" className="text-typography-950">
               Processamento Assíncrono
             </Title>
             <Text className="text-typography-400">

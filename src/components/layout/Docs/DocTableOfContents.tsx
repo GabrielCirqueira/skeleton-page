@@ -60,7 +60,7 @@ export function DocTableOfContents() {
                 "text-xs font-bold transition-all border-l-2 pl-4 -ml-[2px]",
                 activeId === item.id
                   ? "text-brand-500 border-brand-500"
-                  : "text-typography-400 border-transparent hover:text-white"
+                  : "text-typography-400 border-transparent hover:text-typography-950"
               )}
               style={{ marginLeft: item.level === 3 ? "12px" : "0" }}
             >

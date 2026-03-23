@@ -66,7 +66,7 @@ export function DocLayout({ children }: { children: React.ReactNode }) {
               className="fixed inset-y-0 left-0 w-4/5 max-w-sm bg-background-950 z-[70] lg:hidden border-r border-outline-900 shadow-2xl overflow-y-auto px-6"
             >
               <div className="pt-8 pb-4 border-b border-outline-900 mb-4 flex items-center justify-between">
-                <span className="text-xl font-black text-white">Menu Docs</span>
+                <span className="text-xl font-black text-typography-950">Menu Docs</span>
                 <button onClick={() => setIsSidebarOpen(false)} className="text-typography-400">
                   <X className="size-6" />
                 </button>

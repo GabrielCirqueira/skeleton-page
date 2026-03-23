@@ -29,7 +29,7 @@ export function Component() {
 
         <VStack className="gap-3 w-full sm:w-auto">
           <Link to="/" className="w-full">
-            <Button className="bg-brand-500 hover:bg-brand-600 text-white shadow-soft-1 transition-all hover:scale-105 flex items-center gap-2 w-full justify-center">
+            <Button className="bg-brand-500 hover:bg-brand-600 text-typography-950 shadow-soft-1 transition-all hover:scale-105 flex items-center gap-2 w-full justify-center">
               <Icon icon={Home} size={18} />
               Ir para Home
             </Button>

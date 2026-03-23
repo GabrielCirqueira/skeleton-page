@@ -33,7 +33,7 @@ export function SetupRapido() {
   return (
     <VStack gap={16} className="py-24 border-t border-outline-900/50">
       <VStack gap={4} className="text-center mx-auto max-w-2xl">
-        <Title variant="h2" className="text-white">
+        <Title variant="h2" className="text-typography-950">
           Do zero ao real em <span className="text-brand-500">3 passos.</span>
         </Title>
         <Text variant="lg" className="text-typography-400">
@@ -59,7 +59,7 @@ export function SetupRapido() {
                   <Terminal className="text-brand-500/30 group-hover:text-brand-500 group-hover:scale-110 transition-all" />
                 </HStack>
                 <VStack gap={2}>
-                  <Title variant="h4" className="text-white">
+                  <Title variant="h4" className="text-typography-950">
                     {passo.title}
                   </Title>
                   <Text className="text-typography-400 text-sm">{passo.desc}</Text>

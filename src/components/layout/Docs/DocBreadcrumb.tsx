@@ -25,7 +25,7 @@ export function DocBreadcrumb() {
               ) : (
                 <Link
                   to={to}
-                  className="text-xs font-bold text-typography-400 hover:text-white transition-colors uppercase tracking-widest"
+                  className="text-xs font-bold text-typography-400 hover:text-typography-950 transition-colors uppercase tracking-widest"
                 >
                   {decodeURI(value)}
                 </Link>

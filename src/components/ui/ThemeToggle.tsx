@@ -8,10 +8,10 @@ export function ThemeToggle() {
 
   return (
     <Button
-      variant="ghost"
+      variant="outline"
       size="icon"
       onClick={toggleTheme}
-      className="relative w-10 h-10 rounded-xl bg-background-800/50 hover:bg-brand-500/10 hover:text-brand-500 border border-outline-900/50 transition-all duration-300 overflow-hidden"
+      className="relative w-10 h-10 rounded-xl bg-background-800 hover:bg-brand-500/10 text-typography-400 hover:text-brand-500 border border-outline-900 shadow-sm transition-all duration-300 overflow-hidden"
     >
       <AnimatePresence mode="wait">
         {theme === "dark" ? (
@@ -22,7 +22,7 @@ export function ThemeToggle() {
             exit={{ y: -20, opacity: 0, rotate: -45 }}
             transition={{ duration: 0.2 }}
           >
-            <Sun className="w-5 h-5" />
+            <Sun className="w-5 h-5 text-yellow-500" />
           </motion.div>
         ) : (
           <motion.div
@@ -32,7 +32,7 @@ export function ThemeToggle() {
             exit={{ y: -20, opacity: 0, rotate: -45 }}
             transition={{ duration: 0.2 }}
           >
-            <Moon className="w-5 h-5 text-slate-900" />
+            <Moon className="w-5 h-5 text-brand-500" />
           </motion.div>
         )}
       </AnimatePresence>

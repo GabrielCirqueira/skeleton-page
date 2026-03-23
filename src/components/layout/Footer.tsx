@@ -74,7 +74,7 @@ export function Footer() {
                   <path d="m8 6-6 6 6 6" />
                 </svg>
               </div>
-              <Title variant="h3" className="text-white">
+              <Title variant="h3" className="text-typography-950">
                 Catalyst <span className="text-brand-500">Skeleton</span>
               </Title>
             </Link>
@@ -98,7 +98,7 @@ export function Footer() {
           <div className="md:col-span-8 grid grid-cols-2 sm:grid-cols-3 gap-8">
             {sections.map((section) => (
               <VStack key={section.title} gap={6}>
-                <Title variant="h4" className="text-white text-base">
+                <Title variant="h4" className="text-typography-950 text-base">
                   {section.title}
                 </Title>
                 <div className="flex flex-col gap-3">
@@ -142,7 +142,7 @@ export function Footer() {
             </span>
             <Text
               variant="sm"
-              className="text-typography-400 font-bold hover:text-white transition-colors cursor-pointer"
+              className="text-typography-400 font-bold hover:text-typography-950 transition-colors cursor-pointer"
             >
               Status do Sistema
             </Text>

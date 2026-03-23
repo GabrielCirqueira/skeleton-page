@@ -9,7 +9,7 @@ export function Component() {
     <VStack gap={12} className="pb-20">
       <VStack gap={4}>
         <Badge variant="brand">Deploy</Badge>
-        <Title variant="h1" id="devops" className="text-4xl md:text-5xl text-white">
+        <Title variant="h1" id="devops" className="text-4xl md:text-5xl text-typography-950">
           Infraestrutura e <span className="text-brand-500">DevOps</span>
         </Title>
         <Text variant="lg" className="text-typography-400 max-w-2xl">
@@ -21,7 +21,7 @@ export function Component() {
       {/* Docker */}
       <section id="docker">
         <VStack gap={6}>
-          <Title variant="h2" id="docker-compose" className="text-2xl text-white pt-8">
+          <Title variant="h2" id="docker-compose" className="text-2xl text-typography-950 pt-8">
             Padronização com Docker
           </Title>
           <Text className="text-typography-400">
@@ -48,14 +48,14 @@ export function Component() {
       {/* Apache e Nginx */}
       <section id="servidores">
         <VStack gap={6}>
-          <Title variant="h2" id="servidor-web" className="text-2xl text-white pt-8">
+          <Title variant="h2" id="servidor-web" className="text-2xl text-typography-950 pt-8">
             Servidores e Proxies
           </Title>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <Card className="border-brand-500/10 bg-brand-500/[0.02]">
               <HStack gap={3} className="mb-2">
                 <Server className="size-4 text-brand-500" />
-                <Title variant="h4" className="text-white text-base">
+                <Title variant="h4" className="text-typography-950 text-base">
                   Apache 2.4
                 </Title>
               </HStack>
@@ -66,7 +66,7 @@ export function Component() {
             <Card className="border-brand-500/10 bg-brand-500/[0.02]">
               <HStack gap={3} className="mb-2">
                 <Shield className="size-4 text-brand-500" />
-                <Title variant="h4" className="text-white text-base">
+                <Title variant="h4" className="text-typography-950 text-base">
                   Segurança
                 </Title>
               </HStack>
@@ -81,7 +81,7 @@ export function Component() {
       {/* CI/CD */}
       <section id="cicd">
         <VStack gap={6}>
-          <Title variant="h2" id="pipeline-automacao" className="text-2xl text-white pt-8">
+          <Title variant="h2" id="pipeline-automacao" className="text-2xl text-typography-950 pt-8">
             Continuous Integration (CI)
           </Title>
           <Callout variant="info">
@@ -112,7 +112,7 @@ export function Component() {
           className="items-center bg-brand-500/[0.03] p-8 rounded-3xl border border-brand-500/20"
         >
           <VStack gap={2}>
-            <Title variant="h3" className="text-white">
+            <Title variant="h3" className="text-typography-950">
               Produtividade CLI
             </Title>
             <Text className="text-typography-400">

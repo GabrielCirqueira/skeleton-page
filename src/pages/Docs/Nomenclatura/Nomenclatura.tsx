@@ -9,7 +9,7 @@ export function Component() {
     <VStack gap={12} className="pb-20">
       <VStack gap={4}>
         <Badge variant="brand">Cultura</Badge>
-        <Title variant="h1" id="nomenclatura" className="text-4xl md:text-5xl text-white">
+        <Title variant="h1" id="nomenclatura" className="text-4xl md:text-5xl text-typography-950">
           Dicionário de <span className="text-brand-500">Nomenclatura</span>
         </Title>
         <Text variant="lg" className="text-typography-400 max-w-2xl">
@@ -21,7 +21,7 @@ export function Component() {
       {/* Tudo em Português */}
       <section id="portugues">
         <VStack gap={6}>
-          <Title variant="h2" id="idioma-projeto" className="text-2xl text-white pt-8">
+          <Title variant="h2" id="idioma-projeto" className="text-2xl text-typography-950 pt-8">
             Tudo em Português
           </Title>
           <Text className="text-typography-400">
@@ -37,7 +37,7 @@ export function Component() {
             <Card className="border-red-500/10 bg-red-500/[0.02]">
               <HStack gap={3} className="mb-2">
                 <XCircle className="size-4 text-red-500" />
-                <Title variant="h4" className="text-white text-base">
+                <Title variant="h4" className="text-typography-950 text-base">
                   Incorreto
                 </Title>
               </HStack>
@@ -48,7 +48,7 @@ export function Component() {
             <Card className="border-green-500/10 bg-green-500/[0.02]">
               <HStack gap={3} className="mb-2">
                 <CheckCircle2 className="size-4 text-green-500" />
-                <Title variant="h4" className="text-white text-base">
+                <Title variant="h4" className="text-typography-950 text-base">
                   Correto
                 </Title>
               </HStack>
@@ -64,7 +64,7 @@ export function Component() {
       {/* Zero Comentários */}
       <section id="sem-comentarios">
         <VStack gap={6}>
-          <Title variant="h2" id="codigo-limpo" className="text-2xl text-white pt-8">
+          <Title variant="h2" id="codigo-limpo" className="text-2xl text-typography-950 pt-8">
             Zero Comentários
           </Title>
           <Text className="text-typography-400">
@@ -83,7 +83,11 @@ export function Component() {
       {/* Padrões de Variáveis */}
       <section id="padroes">
         <VStack gap={6}>
-          <Title variant="h2" id="variaveis-autoexplicativas" className="text-2xl text-white pt-8">
+          <Title
+            variant="h2"
+            id="variaveis-autoexplicativas"
+            className="text-2xl text-typography-950 pt-8"
+          >
             Variáveis Autoexplicativas
           </Title>
           <CodeBlock
@@ -107,7 +111,7 @@ $usuarioEncontrado = $usuarioRepository->buscarPorUuid($uuid);`}
           className="items-center bg-brand-500/[0.03] p-8 rounded-3xl border border-brand-500/20"
         >
           <VStack gap={2}>
-            <Title variant="h3" className="text-white">
+            <Title variant="h3" className="text-typography-950">
               Voltar ao Início
             </Title>
             <Text className="text-typography-400">Revisite os fundamentos e o setup inicial.</Text>

@@ -11,7 +11,7 @@ export function AppContainer({ children, className, as: Component = "main" }: Co
   return (
     <Component
       className={cn(
-        "min-h-screen bg-background-950 text-typography-950 dark:text-white antialiased",
+        "min-h-screen bg-background-950 text-typography-950 dark:text-typography-950 antialiased",
         className
       )}
     >

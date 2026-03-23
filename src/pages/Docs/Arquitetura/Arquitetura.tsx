@@ -9,7 +9,7 @@ export function Component() {
     <VStack gap={12} className="pb-20">
       <VStack gap={4}>
         <Badge variant="brand">Fundamentos</Badge>
-        <Title variant="h1" id="arquitetura" className="text-4xl md:text-5xl text-white">
+        <Title variant="h1" id="arquitetura" className="text-4xl md:text-5xl text-typography-950">
           Arquitetura e <span className="text-brand-500">Padrões</span>
         </Title>
         <Text variant="lg" className="text-typography-400 max-w-2xl">
@@ -21,7 +21,7 @@ export function Component() {
       {/* Camadas */}
       <section id="camadas">
         <VStack gap={6}>
-          <Title variant="h2" id="camadas-sistema" className="text-2xl text-white pt-8">
+          <Title variant="h2" id="camadas-sistema" className="text-2xl text-typography-950 pt-8">
             Camadas do Sistema
           </Title>
           <Text className="text-typography-400">
@@ -30,7 +30,7 @@ export function Component() {
           </Text>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <Card className="border-brand-500/10 bg-brand-500/[0.02]">
-              <Title variant="h4" className="text-white mb-2">
+              <Title variant="h4" className="text-typography-950 mb-2">
                 Controller
               </Title>
               <Text variant="sm" className="text-typography-400">
@@ -39,7 +39,7 @@ export function Component() {
               </Text>
             </Card>
             <Card className="border-brand-500/10 bg-brand-500/[0.02]">
-              <Title variant="h4" className="text-white mb-2">
+              <Title variant="h4" className="text-typography-950 mb-2">
                 Service
               </Title>
               <Text variant="sm" className="text-typography-400">
@@ -48,7 +48,7 @@ export function Component() {
               </Text>
             </Card>
             <Card className="border-brand-500/10 bg-brand-500/[0.02]">
-              <Title variant="h4" className="text-white mb-2">
+              <Title variant="h4" className="text-typography-950 mb-2">
                 Repository
               </Title>
               <Text variant="sm" className="text-typography-400">
@@ -57,7 +57,7 @@ export function Component() {
               </Text>
             </Card>
             <Card className="border-brand-500/10 bg-brand-500/[0.02]">
-              <Title variant="h4" className="text-white mb-2">
+              <Title variant="h4" className="text-typography-950 mb-2">
                 Serializer
               </Title>
               <Text variant="sm" className="text-typography-400">
@@ -71,7 +71,7 @@ export function Component() {
       {/* Padrão Resultado */}
       <section id="padrao-resultado">
         <VStack gap={6}>
-          <Title variant="h2" id="resultado" className="text-2xl text-white pt-8">
+          <Title variant="h2" id="resultado" className="text-2xl text-typography-950 pt-8">
             Padrão Resultado
           </Title>
           <Callout variant="tip">
@@ -103,7 +103,7 @@ export function Component() {
       {/* UUIDv7 */}
       <section id="infraestrutura">
         <VStack gap={6}>
-          <Title variant="h2" id="uuidv7" className="text-2xl text-white pt-8">
+          <Title variant="h2" id="uuidv7" className="text-2xl text-typography-950 pt-8">
             Identificadores UUID v7
           </Title>
           <Text className="text-typography-400">
@@ -117,7 +117,7 @@ export function Component() {
           >
             <HStack gap={3}>
               <Database className="size-5 text-brand-500" />
-              <Text className="text-white font-black">Performance em Índices B-Tree</Text>
+              <Text className="text-typography-950 font-black">Performance em Índices B-Tree</Text>
             </HStack>
             <Text variant="sm" className="text-typography-400">
               Evita a fragmentação de páginas no MySQL durante inserções em massa.
@@ -129,7 +129,7 @@ export function Component() {
       {/* Organização de Pastas */}
       <section id="pastas">
         <VStack gap={6}>
-          <Title variant="h2" id="estrutura-pastas" className="text-2xl text-white pt-8">
+          <Title variant="h2" id="estrutura-pastas" className="text-2xl text-typography-950 pt-8">
             Estrutura de Pastas
           </Title>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -176,7 +176,7 @@ export function Component() {
           className="items-center bg-brand-500/[0.03] p-8 rounded-3xl border border-brand-500/20"
         >
           <VStack gap={2}>
-            <Title variant="h3" className="text-white">
+            <Title variant="h3" className="text-typography-950">
               Segurança de Ponta
             </Title>
             <Text className="text-typography-400">

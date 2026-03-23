@@ -48,7 +48,7 @@ export function Diferenciais() {
   return (
     <VStack gap={16} className="py-24">
       <VStack gap={4} className="text-center max-w-3xl mx-auto">
-        <Title variant="h2" className="text-3xl sm:text-5xl text-white">
+        <Title variant="h2" className="text-3xl sm:text-5xl text-typography-950">
           Tudo que você precisaria configurar.{" "}
           <span className="text-brand-500">Já configurado.</span>
         </Title>
@@ -72,7 +72,7 @@ export function Diferenciais() {
                   <item.icon className="size-6" />
                 </Box>
                 <VStack gap={2}>
-                  <Title variant="h4" className="text-white">
+                  <Title variant="h4" className="text-typography-950">
                     {item.title}
                   </Title>
                   <Text className="text-typography-400 leading-relaxed">{item.description}</Text>

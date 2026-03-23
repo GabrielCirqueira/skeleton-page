@@ -9,7 +9,7 @@ export function Component() {
     <VStack gap={12} className="pb-20">
       <VStack gap={4}>
         <Badge variant="brand">Confiança</Badge>
-        <Title variant="h1" id="qualidade" className="text-4xl md:text-5xl text-white">
+        <Title variant="h1" id="qualidade" className="text-4xl md:text-5xl text-typography-950">
           Qualidade de <span className="text-brand-500">Engenharia</span>
         </Title>
         <Text variant="lg" className="text-typography-400 max-w-2xl">
@@ -21,7 +21,7 @@ export function Component() {
       {/* Pirâmide de Testes */}
       <section id="testes">
         <VStack gap={6}>
-          <Title variant="h2" id="piramide-testes" className="text-2xl text-white pt-8">
+          <Title variant="h2" id="piramide-testes" className="text-2xl text-typography-950 pt-8">
             Pirâmide de Testes
           </Title>
           <Text className="text-typography-400">
@@ -32,7 +32,7 @@ export function Component() {
             <Card className="border-brand-500/10 bg-brand-500/[0.02]">
               <HStack gap={3} className="mb-2">
                 <FlaskConical className="size-4 text-brand-500" />
-                <Title variant="h4" className="text-white text-base">
+                <Title variant="h4" className="text-typography-950 text-base">
                   Testes Unitários
                 </Title>
               </HStack>
@@ -43,7 +43,7 @@ export function Component() {
             <Card className="border-brand-500/10 bg-brand-500/[0.02]">
               <HStack gap={3} className="mb-2">
                 <CheckCircle2 className="size-4 text-brand-500" />
-                <Title variant="h4" className="text-white text-base">
+                <Title variant="h4" className="text-typography-950 text-base">
                   Integração
                 </Title>
               </HStack>
@@ -58,7 +58,7 @@ export function Component() {
       {/* Análise Estática */}
       <section id="static-analysis">
         <VStack gap={6}>
-          <Title variant="h2" id="analise-estatica" className="text-2xl text-white pt-8">
+          <Title variant="h2" id="analise-estatica" className="text-2xl text-typography-950 pt-8">
             Análise Estática e Linting
           </Title>
           <Text className="text-typography-400">
@@ -72,7 +72,7 @@ export function Component() {
             >
               <Search className="size-5 text-brand-500 shrink-0" />
               <VStack gap={1}>
-                <Text className="text-white font-black">PHPStan (Nível 6)</Text>
+                <Text className="text-typography-950 font-black">PHPStan (Nível 6)</Text>
                 <Text variant="sm" className="text-typography-400">
                   Garante tipagem correta em todo o backend Symfony.
                 </Text>
@@ -84,7 +84,7 @@ export function Component() {
             >
               <Settings className="size-5 text-brand-500 shrink-0" />
               <VStack gap={1}>
-                <Text className="text-white font-black">Biome (Frontend)</Text>
+                <Text className="text-typography-950 font-black">Biome (Frontend)</Text>
                 <Text variant="sm" className="text-typography-400">
                   Linter e formatter ultra-rápido para React e TypeScript.
                 </Text>
@@ -97,7 +97,11 @@ export function Component() {
       {/* Git Hooks */}
       <section id="commits">
         <VStack gap={6}>
-          <Title variant="h2" id="conventional-commits" className="text-2xl text-white pt-8">
+          <Title
+            variant="h2"
+            id="conventional-commits"
+            className="text-2xl text-typography-950 pt-8"
+          >
             Commitlint & Husky
           </Title>
           <Callout variant="warning">
@@ -117,7 +121,7 @@ export function Component() {
       {/* Comandos de QA */}
       <section id="qa-commands">
         <VStack gap={6}>
-          <Title variant="h2" id="comandos-qa" className="text-2xl text-white pt-8">
+          <Title variant="h2" id="comandos-qa" className="text-2xl text-typography-950 pt-8">
             Bateria de QA
           </Title>
           <CodeBlock
@@ -142,7 +146,7 @@ make lint-all`}
           className="items-center bg-brand-500/[0.03] p-8 rounded-3xl border border-brand-500/20"
         >
           <VStack gap={2}>
-            <Title variant="h3" className="text-white">
+            <Title variant="h3" className="text-typography-950">
               Infraestrutura e DevOps
             </Title>
             <Text className="text-typography-400">Deploy, Docker e configuração de ambientes.</Text>

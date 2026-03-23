@@ -41,7 +41,7 @@ export function Callout({ children, title, variant = "info", className }: Callou
       </div>
       <div className="flex-1 flex flex-col gap-1">
         {title && (
-          <Title variant="h4" className="text-white text-base">
+          <Title variant="h4" className="text-typography-950 text-base">
             {title}
           </Title>
         )}

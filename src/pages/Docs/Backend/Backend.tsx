@@ -9,7 +9,7 @@ export function Component() {
     <VStack gap={12} className="pb-20">
       <VStack gap={4}>
         <Badge variant="brand">Engenharia</Badge>
-        <Title variant="h1" id="backend" className="text-4xl md:text-5xl text-white">
+        <Title variant="h1" id="backend" className="text-4xl md:text-5xl text-typography-950">
           Arquitetura de <span className="text-brand-500">Backend</span>
         </Title>
         <Text variant="lg" className="text-typography-400 max-w-2xl">
@@ -21,7 +21,7 @@ export function Component() {
       {/* Services Atômicos */}
       <section id="services">
         <VStack gap={6}>
-          <Title variant="h2" id="services-logica" className="text-2xl text-white pt-8">
+          <Title variant="h2" id="services-logica" className="text-2xl text-typography-950 pt-8">
             Services e Lógica de Negócio
           </Title>
           <Text className="text-typography-400">
@@ -32,7 +32,7 @@ export function Component() {
             <Card className="border-brand-500/10 bg-brand-500/[0.02]">
               <HStack gap={3} className="mb-2">
                 <Zap className="size-4 text-brand-500" />
-                <Title variant="h4" className="text-white text-base">
+                <Title variant="h4" className="text-typography-950 text-base">
                   Services Atômicos
                 </Title>
               </HStack>
@@ -44,7 +44,7 @@ export function Component() {
             <Card className="border-brand-500/10 bg-brand-500/[0.02]">
               <HStack gap={3} className="mb-2">
                 <ShieldCheck className="size-4 text-brand-500" />
-                <Title variant="h4" className="text-white text-base">
+                <Title variant="h4" className="text-typography-950 text-base">
                   Independência de HTTP
                 </Title>
               </HStack>
@@ -74,7 +74,7 @@ export function Component() {
       {/* DTOs */}
       <section id="dtos">
         <VStack gap={6}>
-          <Title variant="h2" id="dtos-validacao" className="text-2xl text-white pt-8">
+          <Title variant="h2" id="dtos-validacao" className="text-2xl text-typography-950 pt-8">
             DTOs e Validação de Entrada
           </Title>
           <Text className="text-typography-400">
@@ -103,7 +103,7 @@ export function Component() {
       {/* Entidades e Enums */}
       <section id="dominio">
         <VStack gap={6}>
-          <Title variant="h2" id="entidades-enums" className="text-2xl text-white pt-8">
+          <Title variant="h2" id="entidades-enums" className="text-2xl text-typography-950 pt-8">
             Entidades e Enums
           </Title>
           <Text className="text-typography-400">
@@ -139,7 +139,7 @@ class Pedido
       {/* Regras de Ouro */}
       <section id="regras">
         <VStack gap={6}>
-          <Title variant="h2" id="regras-ouro" className="text-2xl text-white pt-8">
+          <Title variant="h2" id="regras-ouro" className="text-2xl text-typography-950 pt-8">
             Regras de Ouro do Backend
           </Title>
           <div className="space-y-4">
@@ -149,7 +149,7 @@ class Pedido
             >
               <Target className="size-5 text-brand-500 shrink-0" />
               <VStack gap={1}>
-                <Text className="text-white font-black">Early Return</Text>
+                <Text className="text-typography-950 font-black">Early Return</Text>
                 <Text variant="sm" className="text-typography-400">
                   Ordene falhas pelo custo. Valide o que é local antes de chamar o banco.
                 </Text>
@@ -161,7 +161,7 @@ class Pedido
             >
               <BookOpen className="size-5 text-brand-500 shrink-0" />
               <VStack gap={1}>
-                <Text className="text-white font-black">Zero Comentários</Text>
+                <Text className="text-typography-950 font-black">Zero Comentários</Text>
                 <Text variant="sm" className="text-typography-400">
                   O código deve se explicar. Nomes como <code>validarDuplicidadeDeEmail()</code>{" "}
                   dispensam comentários.
@@ -174,7 +174,7 @@ class Pedido
             >
               <Server className="size-5 text-brand-500 shrink-0" />
               <VStack gap={1}>
-                <Text className="text-white font-black">Serializer é Contrato</Text>
+                <Text className="text-typography-950 font-black">Serializer é Contrato</Text>
                 <Text variant="sm" className="text-typography-400">
                   Nunca retorne entidades diretamente. O Serializer protege contra mudanças internas
                   no banco.
@@ -192,7 +192,7 @@ class Pedido
           className="items-center bg-brand-500/[0.03] p-8 rounded-3xl border border-brand-500/20"
         >
           <VStack gap={2}>
-            <Title variant="h3" className="text-white">
+            <Title variant="h3" className="text-typography-950">
               Experiência do Usuário
             </Title>
             <Text className="text-typography-400">

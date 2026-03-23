@@ -15,7 +15,7 @@ export function LinhaDoTempo() {
   return (
     <VStack gap={16} className="py-24 border-t border-outline-900/50">
       <VStack gap={4} className="text-center mx-auto max-w-2xl">
-        <Title variant="h2" className="text-white">
+        <Title variant="h2" className="text-typography-950">
           Evolução Contínua.
         </Title>
         <Text variant="lg" className="text-typography-400">
@@ -50,7 +50,7 @@ export function LinhaDoTempo() {
                 <Text variant="xs" className="text-typography-400">
                   {item.data}
                 </Text>
-                <Text className="text-white text-sm font-semibold">{item.desc}</Text>
+                <Text className="text-typography-950 text-sm font-semibold">{item.desc}</Text>
               </VStack>
             </VStack>
           </motion.div>
