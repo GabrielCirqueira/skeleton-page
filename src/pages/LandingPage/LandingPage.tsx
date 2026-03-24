@@ -61,7 +61,7 @@ export function Component() {
               </Button>
               <Button asChild variant="secondary" size="lg" className="h-14 px-10 text-base">
                 <a
-                  href="https://github.com/GabrielCirqueira/catalyst-testproject"
+                  href="https://github.com/GabrielCirqueira/Catalyst-Skeleton"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

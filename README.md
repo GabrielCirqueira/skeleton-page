@@ -93,7 +93,7 @@ Este repositório foi projetado para ser copiado ou usado como base — você po
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/GabrielCirqueira/React-Skeleleton my-app
+git clone https://github.com/GabrielCirqueira/Catalyst-Skeleton my-app
 cd my-app
 ```
 

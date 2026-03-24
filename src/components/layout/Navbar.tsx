@@ -56,7 +56,7 @@ export function Navbar() {
               <ThemeToggle />
               <Button asChild variant="ghost" size="icon">
                 <a
-                  href="https://github.com/GabrielCirqueira/catalyst-testproject"
+                  href="https://github.com/GabrielCirqueira/Catalyst-Skeleton"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

@@ -1,7 +1,7 @@
 import { Container } from "./Containers";
 import { Title, Text } from "@/components/ui";
 import { HStack, VStack } from "./Stack";
-import { Github, Twitter, Linkedin, ExternalLink } from "lucide-react";
+import { Github, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 
 interface FooterLink {
@@ -45,11 +45,9 @@ export function Footer() {
       links: [
         {
           name: "GitHub",
-          href: "https://github.com/GabrielCirqueira/catalyst-testproject",
+          href: "https://github.com/GabrielCirqueira/Catalyst-Skeleton",
           external: true,
         },
-        { name: "LinkedIn", href: "https://linkedin.com", external: true },
-        { name: "Twitter", href: "https://twitter.com", external: true },
       ],
     },
   ];
@@ -83,15 +81,14 @@ export function Footer() {
               design de alto nível.
             </Text>
             <HStack gap={4}>
-              {[Github, Twitter, Linkedin].map((Icon, i) => (
-                <a
-                  key={i}
-                  href="#"
-                  className="w-10 h-10 rounded-lg border border-outline-900 flex items-center justify-center text-typography-400 hover:text-brand-500 hover:border-brand-500/50 hover:bg-brand-500/5 transition-all"
-                >
-                  <Icon className="w-5 h-5" />
-                </a>
-              ))}
+              <a
+                href="https://github.com/GabrielCirqueira/Catalyst-Skeleton"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-lg border border-outline-900 flex items-center justify-center text-typography-400 hover:text-brand-500 hover:border-brand-500/50 hover:bg-brand-500/5 transition-all"
+              >
+                <Github className="w-5 h-5" />
+              </a>
             </HStack>
           </div>
 
