@@ -2,7 +2,6 @@ import { BrowserRouter, Routes, Route, Navigate, Outlet } from "react-router-dom
 import { DocLayout } from "@/components/layout/Docs/DocLayout";
 import { ThemeProvider } from "@/contexts/ThemeContext";
 
-// Páginas
 import { Component as LandingPage } from "@/pages/LandingPage/LandingPage";
 import { Component as Introducao } from "@/pages/Docs/Introducao/Introducao";
 import { Component as Arquitetura } from "@/pages/Docs/Arquitetura/Arquitetura";
@@ -23,7 +22,6 @@ export default function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
 
-          {/* Documentação com Layout Centralizado */}
           <Route
             path="/docs"
             element={

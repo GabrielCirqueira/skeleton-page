@@ -13,7 +13,7 @@ export function Quote() {
       viewport={{ once: true }}
       className="py-32 flex flex-col items-center text-center"
     >
-      <Box className="size-16 rounded-2xl bg-brand-500/10 flex items-center justify-center text-brand-500 mb-12">
+      <Box className="size-16 rounded-lg bg-brand-500/10 flex items-center justify-center text-brand-500 mb-12">
         <QuoteIcon className="size-8 fill-brand-500/20" />
       </Box>
       <Title

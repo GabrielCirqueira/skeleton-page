@@ -18,7 +18,6 @@ export function Component() {
         </Text>
       </VStack>
 
-      {/* Estrutura por Features */}
       <section id="features">
         <VStack gap={6}>
           <Title variant="h2" id="estrutura-features" className="text-2xl text-typography-950 pt-8">
@@ -55,7 +54,6 @@ export function Component() {
         </VStack>
       </section>
 
-      {/* Banimento do useEffect */}
       <section id="use-effect">
         <VStack gap={6}>
           <Title variant="h2" id="banimento-effect" className="text-2xl text-typography-950 pt-8">
@@ -73,7 +71,7 @@ export function Component() {
           <div className="space-y-4">
             <HStack
               gap={4}
-              className="p-4 bg-background-900/30 border border-outline-900 rounded-xl"
+              className="p-4 bg-background-900/30 border border-outline-900 rounded-lg"
             >
               <Ban className="size-5 text-red-500 shrink-0" />
               <VStack gap={1}>
@@ -88,7 +86,6 @@ export function Component() {
         </VStack>
       </section>
 
-      {/* Estado do Servidor */}
       <section id="query">
         <VStack gap={6}>
           <Title variant="h2" id="server-state" className="text-2xl text-typography-950 pt-8">
@@ -105,14 +102,13 @@ export function Component() {
   return useQuery({
     queryKey: ['produtos'],
     queryFn: () => api.get('/produtos'),
-    staleTime: 1000 * 60 * 5 // 5 minutos de cache
+    staleTime: 1000 * 60 * 5
   });
 }`}
           />
         </VStack>
       </section>
 
-      {/* Interface e Design */}
       <section id="ui">
         <VStack gap={6}>
           <Title variant="h2" id="design-system" className="text-2xl text-typography-950 pt-8">
@@ -156,11 +152,10 @@ export function Component() {
         </VStack>
       </section>
 
-      {/* Próximos Passos */}
       <Box className="pt-12 mt-12 border-t border-outline-900/50">
         <HStack
           justify="between"
-          className="items-center bg-brand-500/[0.03] p-8 rounded-3xl border border-brand-500/20"
+          className="items-center bg-brand-500/[0.03] p-8 rounded-lg border border-brand-500/20"
         >
           <VStack gap={2}>
             <Title variant="h3" className="text-typography-950">

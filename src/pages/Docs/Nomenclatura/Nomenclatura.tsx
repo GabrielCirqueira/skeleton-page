@@ -18,7 +18,6 @@ export function Component() {
         </Text>
       </VStack>
 
-      {/* Tudo em Português */}
       <section id="portugues">
         <VStack gap={6}>
           <Title variant="h2" id="idioma-projeto" className="text-2xl text-typography-950 pt-8">
@@ -61,7 +60,6 @@ export function Component() {
         </VStack>
       </section>
 
-      {/* Zero Comentários */}
       <section id="sem-comentarios">
         <VStack gap={6}>
           <Title variant="h2" id="codigo-limpo" className="text-2xl text-typography-950 pt-8">
@@ -71,7 +69,7 @@ export function Component() {
             Comentários mentem. O código não. Se você precisa comentar o que o código faz, o código
             não é claro o suficiente.
           </Text>
-          <HStack gap={4} className="p-4 bg-background-950 border border-outline-900 rounded-xl">
+          <HStack gap={4} className="p-4 bg-background-950 border border-outline-900 rounded-lg">
             <MessageSquareOff className="size-5 text-brand-500 shrink-0" />
             <Text className="text-typography-400 text-sm italic">
               "Não comente um código ruim. Reescreva-o." — Brian Kernighan
@@ -80,7 +78,6 @@ export function Component() {
         </VStack>
       </section>
 
-      {/* Padrões de Variáveis */}
       <section id="padroes">
         <VStack gap={6}>
           <Title
@@ -97,18 +94,16 @@ export function Component() {
 $var = 10;
 $dados = $repo->find($id);
 
-// ✅ Bom: descritivo
 $tentativasRestantesDeLogin = 10;
 $usuarioEncontrado = $usuarioRepository->buscarPorUuid($uuid);`}
           />
         </VStack>
       </section>
 
-      {/* Próximos Passos */}
       <Box className="pt-12 mt-12 border-t border-outline-900/50">
         <HStack
           justify="between"
-          className="items-center bg-brand-500/[0.03] p-8 rounded-3xl border border-brand-500/20"
+          className="items-center bg-brand-500/[0.03] p-8 rounded-lg border border-brand-500/20"
         >
           <VStack gap={2}>
             <Title variant="h3" className="text-typography-950">

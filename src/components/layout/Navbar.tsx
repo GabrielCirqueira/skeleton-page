@@ -43,7 +43,6 @@ export function Navbar() {
             </Title>
           </Link>
 
-          {/* Desktop Links */}
           <HStack gap={8} className="hidden md:flex">
             {links.map((link) => (
               <Link
@@ -71,7 +70,6 @@ export function Navbar() {
             </HStack>
           </HStack>
 
-          {/* Mobile Toggle */}
           <HStack gap={2} className="md:hidden">
             <ThemeToggle />
             <button className="text-typography-950 p-2" onClick={() => setIsMenuOpen(!isMenuOpen)}>
@@ -80,7 +78,6 @@ export function Navbar() {
           </HStack>
         </HStack>
 
-        {/* Mobile Menu */}
         {isMenuOpen && (
           <Box className="md:hidden pt-4 pb-2 border-t border-outline-900 mt-4 absolute left-0 right-0 bg-background-950 px-4 animate-in slide-in-from-top-4 duration-300 overflow-hidden">
             <div className="flex flex-col gap-4 py-4">

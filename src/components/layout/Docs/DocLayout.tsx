@@ -18,10 +18,8 @@ export function DocLayout({ children }: { children: React.ReactNode }) {
 
       <Container className="pt-24 lg:pt-32 pb-20">
         <div className="flex gap-4 lg:gap-12 relative items-start">
-          {/* Desktop Sidebar */}
           <DocSidebar className="hidden lg:block" />
 
-          {/* Mobile Sidebar Trigger */}
           <button
             onClick={() => setIsSidebarOpen(true)}
             className="lg:hidden fixed bottom-8 right-8 z-40 size-14 rounded-full bg-brand-500 text-background-950 shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all"
@@ -29,7 +27,6 @@ export function DocLayout({ children }: { children: React.ReactNode }) {
             <Menu className="size-6" />
           </button>
 
-          {/* Main Content Area */}
           <main className="flex-1 w-full max-w-[800px] min-w-0">
             <DocBreadcrumb />
             <motion.div
@@ -42,12 +39,10 @@ export function DocLayout({ children }: { children: React.ReactNode }) {
             </motion.div>
           </main>
 
-          {/* Table of Contents */}
           <DocTableOfContents />
         </div>
       </Container>
 
-      {/* Mobile Sidebar Overlay */}
       <AnimatePresence>
         {isSidebarOpen && (
           <>

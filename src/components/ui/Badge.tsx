@@ -26,7 +26,7 @@ export function Badge({ children, variant = "brand", className, size = "md" }: B
   return (
     <span
       className={cn(
-        "inline-flex items-center font-bold uppercase tracking-widest border rounded-md transition-all",
+        "inline-flex items-center font-bold uppercase tracking-widest border rounded-lg transition-all",
         variants[variant],
         sizes[size],
         className

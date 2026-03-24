@@ -31,7 +31,7 @@ export function Callout({ children, title, variant = "info", className }: Callou
   return (
     <div
       className={cn(
-        "p-5 border rounded-xl flex gap-4 my-6 transition-all shadow-sm",
+        "p-5 border rounded-lg flex gap-4 my-6 transition-all shadow-sm",
         variantStyles,
         className
       )}

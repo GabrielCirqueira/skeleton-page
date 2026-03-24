@@ -4,13 +4,13 @@
 
 @layer base {
   :root {
-    --background-950: #ffffff;
-    --background-900: #f9fafb;
-    --background-800: #f3f4f6;
-    --typography-950: #0a0a0a;
-    --typography-900: #171717;
-    --typography-400: #525252;
-    --outline-900: #e5e7eb;
+    --background-950: #f1f5f9;
+    --background-900: #ffffff;
+    --background-800: #cbd5e1;
+    --typography-950: #0f172a;
+    --typography-900: #334155;
+    --typography-400: #64748b;
+    --outline-900: #e2e8f0;
   }
 
   .dark {

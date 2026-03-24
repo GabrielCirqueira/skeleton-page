@@ -22,7 +22,6 @@ export function Component() {
         </Text>
       </VStack>
 
-      {/* UUID v7 */}
       <section id="uuid">
         <VStack gap={6}>
           <Title variant="h2" id="id-uuidv7" className="text-2xl text-typography-950 pt-8">
@@ -60,7 +59,6 @@ export function Component() {
         </VStack>
       </section>
 
-      {/* Doctrine Migrations */}
       <section id="migrations">
         <VStack gap={6}>
           <Title
@@ -88,7 +86,6 @@ make migrate`}
         </VStack>
       </section>
 
-      {/* Paginação */}
       <section id="paginacao">
         <VStack gap={6}>
           <Title variant="h2" id="padrao-paginacao" className="text-2xl text-typography-950 pt-8">
@@ -122,11 +119,10 @@ make migrate`}
         </VStack>
       </section>
 
-      {/* Próximos Passos */}
       <Box className="pt-12 mt-12 border-t border-outline-900/50">
         <HStack
           justify="between"
-          className="items-center bg-brand-500/[0.03] p-8 rounded-3xl border border-brand-500/20"
+          className="items-center bg-brand-500/[0.03] p-8 rounded-lg border border-brand-500/20"
         >
           <VStack gap={2}>
             <Title variant="h3" className="text-typography-950">

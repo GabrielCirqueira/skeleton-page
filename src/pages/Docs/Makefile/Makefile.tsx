@@ -18,7 +18,6 @@ export function Component() {
         </Text>
       </VStack>
 
-      {/* Por que Makefile? */}
       <section id="why">
         <VStack gap={6}>
           <Title
@@ -59,7 +58,6 @@ export function Component() {
         </VStack>
       </section>
 
-      {/* Comandos Essenciais */}
       <section id="commands">
         <VStack gap={6}>
           <Title
@@ -88,7 +86,6 @@ make cc      # Limpa o cache do Symfony`}
         </VStack>
       </section>
 
-      {/* Logs e Debug */}
       <section id="logs">
         <VStack gap={6}>
           <Title variant="h2" id="gestao-logs" className="text-2xl text-typography-950 pt-8">
@@ -98,7 +95,7 @@ make cc      # Limpa o cache do Symfony`}
             Use <code>make logs</code> para acompanhar tudo o que acontece no servidor em tempo real
             (Tail -f).
           </Callout>
-          <HStack gap={4} className="p-4 bg-background-950 border border-outline-900 rounded-xl">
+          <HStack gap={4} className="p-4 bg-background-950 border border-outline-900 rounded-lg">
             <Terminal className="size-5 text-brand-500 shrink-0" />
             <Text className="text-typography-400 text-sm">
               O comando <code>make bash</code> te coloca dentro do container PHP já no diretório
@@ -108,11 +105,10 @@ make cc      # Limpa o cache do Symfony`}
         </VStack>
       </section>
 
-      {/* Próximos Passos */}
       <Box className="pt-12 mt-12 border-t border-outline-900/50">
         <HStack
           justify="between"
-          className="items-center bg-brand-500/[0.03] p-8 rounded-3xl border border-brand-500/20"
+          className="items-center bg-brand-500/[0.03] p-8 rounded-lg border border-brand-500/20"
         >
           <VStack gap={2}>
             <Title variant="h3" className="text-typography-950">

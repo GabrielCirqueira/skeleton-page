@@ -18,7 +18,6 @@ export function Component() {
         </Text>
       </VStack>
 
-      {/* Services Atômicos */}
       <section id="services">
         <VStack gap={6}>
           <Title variant="h2" id="services-logica" className="text-2xl text-typography-950 pt-8">
@@ -61,17 +60,12 @@ export function Component() {
 {
     public function executar(CriarPedidoDTO $dto): Resultado 
     {
-        // 1. Validar regras de negócio
-        // 2. Chamar Repositorios
-        // 3. Disparar Eventos
-        // 4. Retornar Resultado
     }
 }`}
           />
         </VStack>
       </section>
 
-      {/* DTOs */}
       <section id="dtos">
         <VStack gap={6}>
           <Title variant="h2" id="dtos-validacao" className="text-2xl text-typography-950 pt-8">
@@ -100,7 +94,6 @@ export function Component() {
         </VStack>
       </section>
 
-      {/* Entidades e Enums */}
       <section id="dominio">
         <VStack gap={6}>
           <Title variant="h2" id="entidades-enums" className="text-2xl text-typography-950 pt-8">
@@ -136,7 +129,6 @@ class Pedido
         </VStack>
       </section>
 
-      {/* Regras de Ouro */}
       <section id="regras">
         <VStack gap={6}>
           <Title variant="h2" id="regras-ouro" className="text-2xl text-typography-950 pt-8">
@@ -145,7 +137,7 @@ class Pedido
           <div className="space-y-4">
             <HStack
               gap={4}
-              className="p-4 bg-background-900/30 border border-outline-900 rounded-xl"
+              className="p-4 bg-background-900/30 border border-outline-900 rounded-lg"
             >
               <Target className="size-5 text-brand-500 shrink-0" />
               <VStack gap={1}>
@@ -157,7 +149,7 @@ class Pedido
             </HStack>
             <HStack
               gap={4}
-              className="p-4 bg-background-900/30 border border-outline-900 rounded-xl"
+              className="p-4 bg-background-900/30 border border-outline-900 rounded-lg"
             >
               <BookOpen className="size-5 text-brand-500 shrink-0" />
               <VStack gap={1}>
@@ -170,7 +162,7 @@ class Pedido
             </HStack>
             <HStack
               gap={4}
-              className="p-4 bg-background-900/30 border border-outline-900 rounded-xl"
+              className="p-4 bg-background-900/30 border border-outline-900 rounded-lg"
             >
               <Server className="size-5 text-brand-500 shrink-0" />
               <VStack gap={1}>
@@ -185,11 +177,10 @@ class Pedido
         </VStack>
       </section>
 
-      {/* Próximos Passos */}
       <Box className="pt-12 mt-12 border-t border-outline-900/50">
         <HStack
           justify="between"
-          className="items-center bg-brand-500/[0.03] p-8 rounded-3xl border border-brand-500/20"
+          className="items-center bg-brand-500/[0.03] p-8 rounded-lg border border-brand-500/20"
         >
           <VStack gap={2}>
             <Title variant="h3" className="text-typography-950">

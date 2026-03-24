@@ -18,7 +18,6 @@ export function Component() {
         </Text>
       </VStack>
 
-      {/* Pirâmide de Testes */}
       <section id="testes">
         <VStack gap={6}>
           <Title variant="h2" id="piramide-testes" className="text-2xl text-typography-950 pt-8">
@@ -55,7 +54,6 @@ export function Component() {
         </VStack>
       </section>
 
-      {/* Análise Estática */}
       <section id="static-analysis">
         <VStack gap={6}>
           <Title variant="h2" id="analise-estatica" className="text-2xl text-typography-950 pt-8">
@@ -68,7 +66,7 @@ export function Component() {
           <div className="space-y-4">
             <HStack
               gap={4}
-              className="p-4 bg-background-900/30 border border-outline-900 rounded-xl"
+              className="p-4 bg-background-900/30 border border-outline-900 rounded-lg"
             >
               <Search className="size-5 text-brand-500 shrink-0" />
               <VStack gap={1}>
@@ -80,7 +78,7 @@ export function Component() {
             </HStack>
             <HStack
               gap={4}
-              className="p-4 bg-background-900/30 border border-outline-900 rounded-xl"
+              className="p-4 bg-background-900/30 border border-outline-900 rounded-lg"
             >
               <Settings className="size-5 text-brand-500 shrink-0" />
               <VStack gap={1}>
@@ -94,7 +92,6 @@ export function Component() {
         </VStack>
       </section>
 
-      {/* Git Hooks */}
       <section id="commits">
         <VStack gap={6}>
           <Title
@@ -108,7 +105,7 @@ export function Component() {
             O projeto bloqueia commits que não seguem o padrão Conventional Commits (ex:{" "}
             <code>feat(auth): ...</code>).
           </Callout>
-          <HStack gap={4} className="p-4 bg-background-950 border border-outline-900 rounded-xl">
+          <HStack gap={4} className="p-4 bg-background-950 border border-outline-900 rounded-lg">
             <GitCommit className="size-5 text-brand-500 shrink-0" />
             <Text className="text-typography-400 text-sm">
               Isso garante um histórico de projeto limpo e permite a geração automática de
@@ -118,7 +115,6 @@ export function Component() {
         </VStack>
       </section>
 
-      {/* Comandos de QA */}
       <section id="qa-commands">
         <VStack gap={6}>
           <Title variant="h2" id="comandos-qa" className="text-2xl text-typography-950 pt-8">
@@ -139,11 +135,10 @@ make lint-all`}
         </VStack>
       </section>
 
-      {/* Próximos Passos */}
       <Box className="pt-12 mt-12 border-t border-outline-900/50">
         <HStack
           justify="between"
-          className="items-center bg-brand-500/[0.03] p-8 rounded-3xl border border-brand-500/20"
+          className="items-center bg-brand-500/[0.03] p-8 rounded-lg border border-brand-500/20"
         >
           <VStack gap={2}>
             <Title variant="h3" className="text-typography-950">

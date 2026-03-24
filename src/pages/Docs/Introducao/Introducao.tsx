@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 export function Component() {
   return (
     <VStack gap={12} className="pb-20">
-      {/* Hero da Doc */}
       <VStack gap={4}>
         <Badge variant="brand">Versão 4.0.0 — Estável</Badge>
         <Title variant="h1" id="introducao" className="text-4xl md:text-5xl text-typography-950">
@@ -19,7 +18,6 @@ export function Component() {
         </Text>
       </VStack>
 
-      {/* Visão Geral */}
       <section id="visao-geral">
         <VStack gap={6}>
           <Title variant="h2" id="oque-e" className="text-2xl text-typography-950 pt-8">
@@ -62,13 +60,12 @@ export function Component() {
         </VStack>
       </section>
 
-      {/* Histórico */}
       <section id="historico">
         <VStack gap={6}>
           <Title variant="h2" id="versoes" className="text-2xl text-typography-950 pt-8">
             Histórico de Versões
           </Title>
-          <div className="overflow-x-auto rounded-xl border border-outline-900 bg-background-900/50">
+          <div className="overflow-x-auto rounded-lg border border-outline-900 bg-background-900/50">
             <table className="w-full text-left border-collapse">
               <thead>
                 <tr className="border-b border-outline-900 bg-background-950/50">
@@ -101,7 +98,6 @@ export function Component() {
         </VStack>
       </section>
 
-      {/* Pré-requisitos */}
       <section id="pre-requisitos">
         <VStack gap={6}>
           <Title variant="h2" id="requisitos" className="text-2xl text-typography-950 pt-8">
@@ -136,7 +132,6 @@ export function Component() {
         </VStack>
       </section>
 
-      {/* Setup */}
       <section id="setup">
         <VStack gap={6}>
           <Title variant="h2" id="setup-inicial" className="text-2xl text-typography-950 pt-8">
@@ -162,11 +157,10 @@ export function Component() {
         </VStack>
       </section>
 
-      {/* Próximos Passos */}
       <Box className="pt-12 mt-12 border-t border-outline-900/50">
         <HStack
           justify="between"
-          className="items-center bg-brand-500/[0.03] p-8 rounded-3xl border border-brand-500/20"
+          className="items-center bg-brand-500/[0.03] p-8 rounded-lg border border-brand-500/20"
         >
           <VStack gap={2}>
             <Title variant="h3" className="text-typography-950">

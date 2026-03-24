@@ -18,7 +18,6 @@ export function Component() {
         </Text>
       </VStack>
 
-      {/* Docker */}
       <section id="docker">
         <VStack gap={6}>
           <Title variant="h2" id="docker-compose" className="text-2xl text-typography-950 pt-8">
@@ -45,7 +44,6 @@ export function Component() {
         </VStack>
       </section>
 
-      {/* Apache e Nginx */}
       <section id="servidores">
         <VStack gap={6}>
           <Title variant="h2" id="servidor-web" className="text-2xl text-typography-950 pt-8">
@@ -78,7 +76,6 @@ export function Component() {
         </VStack>
       </section>
 
-      {/* CI/CD */}
       <section id="cicd">
         <VStack gap={6}>
           <Title variant="h2" id="pipeline-automacao" className="text-2xl text-typography-950 pt-8">
@@ -105,11 +102,10 @@ export function Component() {
         </VStack>
       </section>
 
-      {/* Próximos Passos */}
       <Box className="pt-12 mt-12 border-t border-outline-900/50">
         <HStack
           justify="between"
-          className="items-center bg-brand-500/[0.03] p-8 rounded-3xl border border-brand-500/20"
+          className="items-center bg-brand-500/[0.03] p-8 rounded-lg border border-brand-500/20"
         >
           <VStack gap={2}>
             <Title variant="h3" className="text-typography-950">

@@ -18,7 +18,6 @@ export function Component() {
         </Text>
       </VStack>
 
-      {/* Processamento Assíncrono */}
       <section id="async">
         <VStack gap={6}>
           <Title
@@ -59,7 +58,6 @@ export function Component() {
         </VStack>
       </section>
 
-      {/* Message & Handler */}
       <section id="handler">
         <VStack gap={6}>
           <Title
@@ -80,14 +78,12 @@ final class EnviarEmailBemVindoHandler
 {
     public function __invoke(EnviarEmailBemVindoMessage $messenger) 
     {
-        // Lógica de envio de e-mail aqui
     }
 }`}
           />
         </VStack>
       </section>
 
-      {/* Infra de Workers */}
       <section id="infra">
         <VStack gap={6}>
           <Title variant="h2" id="supervisor-workers" className="text-2xl text-typography-950 pt-8">
@@ -100,7 +96,7 @@ final class EnviarEmailBemVindoHandler
           <div className="space-y-4">
             <HStack
               gap={4}
-              className="p-4 bg-background-900/30 border border-outline-900 rounded-xl"
+              className="p-4 bg-background-900/30 border border-outline-900 rounded-lg"
             >
               <Cpu className="size-5 text-brand-500 shrink-0" />
               <VStack gap={1}>
@@ -112,7 +108,7 @@ final class EnviarEmailBemVindoHandler
             </HStack>
             <HStack
               gap={4}
-              className="p-4 bg-background-900/30 border border-outline-900 rounded-xl"
+              className="p-4 bg-background-900/30 border border-outline-900 rounded-lg"
             >
               <Activity className="size-5 text-brand-500 shrink-0" />
               <VStack gap={1}>
@@ -126,11 +122,10 @@ final class EnviarEmailBemVindoHandler
         </VStack>
       </section>
 
-      {/* Próximos Passos */}
       <Box className="pt-12 mt-12 border-t border-outline-900/50">
         <HStack
           justify="between"
-          className="items-center bg-brand-500/[0.03] p-8 rounded-3xl border border-brand-500/20"
+          className="items-center bg-brand-500/[0.03] p-8 rounded-lg border border-brand-500/20"
         >
           <VStack gap={2}>
             <Title variant="h3" className="text-typography-950">

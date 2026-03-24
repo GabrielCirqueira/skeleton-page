@@ -275,4 +275,20 @@ endif
 health-check:
 	@./cli/health-check.sh
 
+push: ## Git add, commit wizard e push para main
+	@echo removendo todos os comentarios do sistema...
+	@bash cli/remove-comments.sh
+	@echo "✅ Comentários removidos!"
+	@echo "📦 Adicionando arquivos ao git..."
+	git add .
+	@echo ""
+	@echo "✍️  Criando commit (pressione ENTER para aceitar opção padrão)..."
+	@echo ""
+	npx commit-wizard || (echo "⚠️  commit-wizard cancelado ou falhou" && exit 1)
+	@echo ""
+	@echo "🚀 Fazendo push para main..."
+	git push origin main
+	@echo ""
+	@echo "✅ Push concluído!"
+
 .DEFAULT_GOAL := help

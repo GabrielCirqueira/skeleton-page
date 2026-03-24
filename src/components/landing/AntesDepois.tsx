@@ -13,14 +13,13 @@ export function AntesDepois() {
       </Title>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {/* Antes */}
         <motion.div
           variants={fadeInUp}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <Card className="border-error-500/10 bg-error-500/[0.02] opacity-60">
+          <Card className="border-error-500/20 bg-error-500/[0.03]">
             <VStack gap={6}>
               <HStack gap={3} className="text-error-500">
                 <X className="w-6 h-6" />
@@ -38,9 +37,9 @@ export function AntesDepois() {
                   <HStack
                     key={i}
                     gap={4}
-                    className="text-typography-400 line-through decoration-error-500/30"
+                    className="text-typography-950/40 line-through decoration-error-500/50"
                   >
-                    <Box className="size-1.5 rounded-full bg-error-500/30" />
+                    <div className="size-1.5 rounded-full bg-error-500/30" />
                     <Text>{item}</Text>
                   </HStack>
                 ))}
@@ -48,7 +47,7 @@ export function AntesDepois() {
               <Box className="pt-4 border-t border-error-500/10">
                 <Text
                   variant="sm"
-                  className="font-bold text-error-500/50 uppercase tracking-widest text-center"
+                  className="font-bold text-error-500/70 uppercase tracking-widest text-center"
                 >
                   Semanas perdidas em boilerplate
                 </Text>
@@ -57,7 +56,6 @@ export function AntesDepois() {
           </Card>
         </motion.div>
 
-        {/* Depois */}
         <motion.div
           variants={fadeInUp}
           initial="hidden"
@@ -83,8 +81,8 @@ export function AntesDepois() {
                   <ArrowRight className="w-5 h-5" />
                   <Text className="text-brand-500">Código de Negócio Real</Text>
                 </HStack>
-                <Box className="h-32 flex items-center justify-center border-2 border-dashed border-brand-500/20 rounded-xl">
-                  <Text className="text-brand-500/50 italic">
+                <Box className="h-32 flex items-center justify-center border-2 border-dashed border-brand-500/20 rounded-lg">
+                  <Text className="text-brand-500/70 italic font-medium px-4">
                     Foque no que traz valor para o seu cliente
                   </Text>
                 </Box>

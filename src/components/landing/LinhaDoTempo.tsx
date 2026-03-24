@@ -44,7 +44,7 @@ export function LinhaDoTempo() {
               </Box>
               <VStack
                 gap={2}
-                className="text-center bg-background-900 p-6 rounded-2xl border border-outline-900"
+                className="text-center bg-background-900 p-6 rounded-lg border border-outline-900"
               >
                 <Badge variant={item.active ? "brand" : "neutral"}>{item.v}</Badge>
                 <Text variant="xs" className="text-typography-400">

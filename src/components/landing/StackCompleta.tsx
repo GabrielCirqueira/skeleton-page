@@ -37,7 +37,6 @@ export function StackCompleta() {
       </VStack>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {/* Backend */}
         <motion.div
           variants={fadeInUp}
           initial="hidden"
@@ -70,7 +69,6 @@ export function StackCompleta() {
           </Card>
         </motion.div>
 
-        {/* Frontend */}
         <motion.div
           variants={fadeInUp}
           initial="hidden"

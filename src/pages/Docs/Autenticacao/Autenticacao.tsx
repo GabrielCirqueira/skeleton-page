@@ -18,7 +18,6 @@ export function Component() {
         </Text>
       </VStack>
 
-      {/* Estrutura de Tokens */}
       <section id="tokens">
         <VStack gap={6}>
           <Title variant="h2" id="estrutura-tokens" className="text-2xl text-typography-950 pt-8">
@@ -61,7 +60,6 @@ export function Component() {
         </VStack>
       </section>
 
-      {/* Interceptor Axios */}
       <section id="interceptores">
         <VStack gap={6}>
           <Title variant="h2" id="axios-interceptors" className="text-2xl text-typography-950 pt-8">
@@ -94,7 +92,6 @@ export function Component() {
         </VStack>
       </section>
 
-      {/* Auth Store */}
       <section id="store">
         <VStack gap={6}>
           <Title variant="h2" id="zustand-store" className="text-2xl text-typography-950 pt-8">
@@ -123,13 +120,12 @@ export function Component() {
         </VStack>
       </section>
 
-      {/* Firewall */}
       <section id="seguranca">
         <VStack gap={6}>
           <Title variant="h2" id="firewall-symfony" className="text-2xl text-typography-950 pt-8">
             Firewall Symfony
           </Title>
-          <VStack gap={4} className="bg-background-950 p-6 rounded-2xl border border-outline-900">
+          <VStack gap={4} className="bg-background-950 p-6 rounded-lg border border-outline-900">
             <HStack gap={3}>
               <Lock className="size-5 text-brand-500" />
               <Text className="text-typography-950 font-black">Stateless: True</Text>
@@ -142,11 +138,10 @@ export function Component() {
         </VStack>
       </section>
 
-      {/* Próximos Passos */}
       <Box className="pt-12 mt-12 border-t border-outline-900/50">
         <HStack
           justify="between"
-          className="items-center bg-brand-500/[0.03] p-8 rounded-3xl border border-brand-500/20"
+          className="items-center bg-brand-500/[0.03] p-8 rounded-lg border border-brand-500/20"
         >
           <VStack gap={2}>
             <Title variant="h3" className="text-typography-950">

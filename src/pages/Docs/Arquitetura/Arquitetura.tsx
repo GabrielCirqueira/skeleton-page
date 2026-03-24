@@ -18,7 +18,6 @@ export function Component() {
         </Text>
       </VStack>
 
-      {/* Camadas */}
       <section id="camadas">
         <VStack gap={6}>
           <Title variant="h2" id="camadas-sistema" className="text-2xl text-typography-950 pt-8">
@@ -68,7 +67,6 @@ export function Component() {
         </VStack>
       </section>
 
-      {/* Padrão Resultado */}
       <section id="padrao-resultado">
         <VStack gap={6}>
           <Title variant="h2" id="resultado" className="text-2xl text-typography-950 pt-8">
@@ -100,7 +98,6 @@ export function Component() {
         </VStack>
       </section>
 
-      {/* UUIDv7 */}
       <section id="infraestrutura">
         <VStack gap={6}>
           <Title variant="h2" id="uuidv7" className="text-2xl text-typography-950 pt-8">
@@ -111,10 +108,7 @@ export function Component() {
             garante alta performance em índices de banco de dados, mantendo a unicidade global e
             ocultando o volume real de dados de usuários mal-intencionados.
           </Text>
-          <VStack
-            gap={2}
-            className="bg-background-900/50 p-6 rounded-2xl border border-outline-900"
-          >
+          <VStack gap={2} className="bg-background-900/50 p-6 rounded-lg border border-outline-900">
             <HStack gap={3}>
               <Database className="size-5 text-brand-500" />
               <Text className="text-typography-950 font-black">Performance em Índices B-Tree</Text>
@@ -126,7 +120,6 @@ export function Component() {
         </VStack>
       </section>
 
-      {/* Organização de Pastas */}
       <section id="pastas">
         <VStack gap={6}>
           <Title variant="h2" id="estrutura-pastas" className="text-2xl text-typography-950 pt-8">
@@ -138,7 +131,7 @@ export function Component() {
                 <Share2 className="size-4" />
                 <Text className="font-black text-xs uppercase tracking-widest">Backend (src/)</Text>
               </HStack>
-              <div className="text-sm font-mono text-typography-400 bg-background-950 p-6 rounded-xl border border-outline-900">
+              <div className="text-sm font-mono text-typography-400 bg-background-950 p-6 rounded-lg border border-outline-900">
                 <ul className="flex flex-col gap-1">
                   <li>├── Command/</li>
                   <li>├── Controller/</li>
@@ -156,7 +149,7 @@ export function Component() {
                   Frontend (web/)
                 </Text>
               </HStack>
-              <div className="text-sm font-mono text-typography-400 bg-background-950 p-6 rounded-xl border border-outline-900">
+              <div className="text-sm font-mono text-typography-400 bg-background-950 p-6 rounded-lg border border-outline-900">
                 <ul className="flex flex-col gap-1">
                   <li>├── features/ (Módulos)</li>
                   <li>├── shared/ (Reutilizáveis)</li>
@@ -169,11 +162,10 @@ export function Component() {
         </VStack>
       </section>
 
-      {/* Próximos Passos */}
       <Box className="pt-12 mt-12 border-t border-outline-900/50">
         <HStack
           justify="between"
-          className="items-center bg-brand-500/[0.03] p-8 rounded-3xl border border-brand-500/20"
+          className="items-center bg-brand-500/[0.03] p-8 rounded-lg border border-brand-500/20"
         >
           <VStack gap={2}>
             <Title variant="h3" className="text-typography-950">

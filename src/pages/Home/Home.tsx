@@ -62,11 +62,11 @@ export function Component() {
               variant="ghost"
               size="icon"
               onClick={toggleTheme}
-              className="rounded-full transition-all duration-300"
+              className="rounded-lg transition-all duration-300"
             >
               <Icon icon={theme === "light" ? Moon : Sun} className="size-5" />
             </Button>
-            <Button className=" text-typography-950 rounded-full bg-brand-600 hover:bg-brand-700 dark:bg-brand-500 dark:hover:bg-brand-600 transition-all duration-300 shadow-hard-2">
+            <Button className=" text-typography-950 rounded-lg bg-brand-600 hover:bg-brand-700 dark:bg-brand-500 dark:hover:bg-brand-600 transition-all duration-300 shadow-hard-2">
               Começar
             </Button>
           </HStack>
@@ -78,7 +78,7 @@ export function Component() {
           <VStack className="gap-8 animate-in fade-in slide-in-from-left duration-700">
             <Badge
               variant="secondary"
-              className="w-fit rounded-full px-4 py-2 bg-brand-50 dark:bg-brand-950 text-brand-700 dark:text-brand-300 border-brand-200 dark:border-brand-800"
+              className="w-fit rounded-lg px-4 py-2 bg-brand-50 dark:bg-brand-950 text-brand-700 dark:text-brand-300 border-brand-200 dark:border-brand-800"
             >
               <HStack className="gap-2 items-center">
                 <Icon icon={Zap} className="size-4" />
@@ -104,7 +104,7 @@ export function Component() {
             <HStack className="gap-4 flex-wrap">
               <Button
                 size="lg"
-                className="rounded-full bg-brand-600 hover:bg-brand-700 dark:bg-brand-500 dark:hover:bg-brand-600 text-typography-950 font-semibold px-8 py-6 shadow-hard-3 hover:shadow-hard-4 transition-all duration-300 hover:scale-105"
+                className="rounded-lg bg-brand-600 hover:bg-brand-700 dark:bg-brand-500 dark:hover:bg-brand-600 text-white font-semibold px-8 py-6 shadow-hard-3 hover:shadow-hard-4 transition-all duration-300 hover:scale-105"
                 onClick={() => setShowModal(true)}
               >
                 <HStack className="gap-2 items-center">
@@ -115,7 +115,7 @@ export function Component() {
               <Button
                 size="lg"
                 variant="outline"
-                className="rounded-full border-2 border-zinc-300 dark:border-zinc-700 hover:border-brand-600 dark:hover:border-brand-500 font-semibold px-8 py-6 transition-all duration-300 hover:scale-105"
+                className="rounded-lg border-2 border-zinc-300 dark:border-zinc-700 hover:border-brand-600 dark:hover:border-brand-500 font-semibold px-8 py-6 transition-all duration-300 hover:scale-105"
               >
                 <HStack className="gap-2 items-center">
                   <Icon icon={GitBranch} className="size-5" />
@@ -136,7 +136,7 @@ export function Component() {
           </VStack>
 
           <Box className="relative animate-in fade-in slide-in-from-right duration-700 delay-200">
-            <Card className="p-8 bg-zinc-50 dark:bg-brand-900 border-zinc-200 shadow-hard-3 hover:shadow-hard-4 transition-all duration-500 rounded-xl overflow-hidden">
+            <Card className="rounded-xl overflow-hidden">
               <VStack className="gap-4">
                 <HStack className="gap-2 items-center">
                   <Icon icon={Terminal} className="size-6 text-brand-600 dark:text-brand-400" />
@@ -147,7 +147,7 @@ export function Component() {
                     Instalação rápida
                   </Title>
                 </HStack>
-                <Box className="bg-zinc-900 dark:bg-black p-6 rounded-xl border w-full border-zinc-800 dark:border-zinc-700">
+                <Box className="bg-zinc-900 dark:bg-black p-6 rounded-lg border w-full border-zinc-800 dark:border-zinc-700">
                   <VStack className="gap-3 font-mono text-xs">
                     <Text className="text-zinc-400">
                       <Text as="span" className="text-green-400">
@@ -190,7 +190,7 @@ export function Component() {
               <Badge
                 key={tech.name}
                 variant="outline"
-                className="justify-center py-4 px-6 rounded-2xl border-2 border-zinc-200 hover:border-brand-500 dark:hover:border-brand-500 hover:shadow-hard-2 transition-all duration-300 hover:scale-110"
+                className="justify-center py-4 px-6 rounded-lg border-2 border-zinc-200 hover:border-brand-500 dark:hover:border-brand-500 hover:shadow-hard-2 transition-all duration-300 hover:scale-110"
               >
                 <HStack className="gap-3 items-center">
                   <Icon icon={tech.icon} className="size-5 text-zinc-600" />
@@ -209,7 +209,7 @@ export function Component() {
           <VStack className="gap-4 items-center text-center max-w-3xl mx-auto animate-in fade-in slide-in-from-bottom duration-700">
             <Badge
               variant="secondary"
-              className="rounded-full px-4 py-2 bg-brand-50 dark:bg-brand-950 text-brand-700 dark:text-brand-300 border-brand-200 dark:border-brand-800"
+              className="rounded-lg px-4 py-2 bg-brand-50 dark:bg-brand-950 text-brand-700 dark:text-brand-300 border-brand-200 dark:border-brand-800"
             >
               Features
             </Badge>
@@ -273,12 +273,12 @@ export function Component() {
             ].map((feature, idx) => (
               <Card
                 key={feature.title}
-                className="p-8 rounded-xl hover:border-brand-500 dark:hover:border-brand-500 hover:shadow-hard-4 transition-all duration-500 hover:scale-105 bg-white dark:bg-zinc-900 animate-in fade-in slide-in-from-bottom"
+                className="p-8 rounded-lg hover:border-brand-500 dark:hover:border-brand-500 hover:shadow-hard-4 transition-all duration-500 hover:scale-105 bg-white dark:bg-zinc-900 animate-in fade-in slide-in-from-bottom"
                 style={{ animationDelay: `${idx * 100}ms`, animationDuration: "700ms" }}
               >
                 <VStack className="gap-4">
                   <Box
-                    className={`w-14 h-14 rounded-2xl ${feature.bgColor} flex items-center justify-center`}
+                    className={`w-14 h-14 rounded-lg ${feature.bgColor} flex items-center justify-center`}
                   >
                     <Icon icon={feature.icon} className={`size-7 ${feature.color}`} />
                   </Box>
@@ -308,7 +308,7 @@ export function Component() {
           ].map((stat, idx) => (
             <Card
               key={stat.label}
-              className="p-8 rounded-xl text-center hover:border-brand-500 dark:hover:border-brand-500 hover:shadow-hard-3 transition-all duration-500 hover:scale-110 bg-white dark:bg-zinc-900 animate-in fade-in zoom-in"
+              className="p-8 rounded-lg text-center hover:border-brand-500 dark:hover:border-brand-500 hover:shadow-hard-3 transition-all duration-500 hover:scale-110 bg-white dark:bg-zinc-900 animate-in fade-in zoom-in"
               style={{ animationDelay: `${idx * 100}ms`, animationDuration: "700ms" }}
             >
               <VStack className="gap-3 items-center">
@@ -332,11 +332,11 @@ export function Component() {
             <VStack className="gap-4 items-center text-center max-w-3xl selection:mx-auto animate-in fade-in slide-in-from-bottom duration-700">
               <Badge
                 variant="secondary"
-                className="rounded-full px-4 py-2 bg-brand-900 text-brand-300 border-brand-800"
+                className="rounded-lg px-4 py-2 bg-brand-900 text-brand-300 border-brand-800"
               >
                 Nossos Valores
               </Badge>
-              <Title size="3xl" className="font-heading font-black text-typography-950">
+              <Title size="3xl" className="font-heading font-black text-white">
                 Construído com propósito
               </Title>
               <Text size="lg" className="text-zinc-400">
@@ -367,11 +367,11 @@ export function Component() {
               ].map((value, idx) => (
                 <Card
                   key={value.title}
-                  className="p-10 rounded-xl bg-zinc-800 dark:bg-zinc-900 border-2 border-zinc-700 dark:border-zinc-800 hover:border-brand-500 hover:shadow-hard-4 transition-all duration-500 hover:scale-105 animate-in fade-in slide-in-from-bottom"
+                  className="p-10 rounded-lg bg-zinc-800 dark:bg-zinc-900 border-2 border-zinc-700 dark:border-zinc-800 hover:border-brand-500 hover:shadow-hard-4 transition-all duration-500 hover:scale-105 animate-in fade-in slide-in-from-bottom"
                   style={{ animationDelay: `${idx * 150}ms`, animationDuration: "700ms" }}
                 >
                   <VStack className="gap-6">
-                    <Box className="w-16 h-16 rounded-2xl bg-brand-900 flex items-center justify-center">
+                    <Box className="w-16 h-16 rounded-lg bg-brand-900 flex items-center justify-center">
                       <Icon icon={value.icon} className="size-8 text-brand-400" />
                     </Box>
                     <VStack className="gap-3">
@@ -391,7 +391,7 @@ export function Component() {
       </Box>
 
       <Container size="xl" className="py-32">
-        <Card className="p-16 rounded-xl bg-gradient-to-br from-brand-600 to-brand-700 dark:from-brand-800 dark:to-brand-900 border-0 shadow-hard-5 overflow-hidden relative animate-in fade-in slide-in-from-bottom duration-700">
+        <Card className="rounded-xl bg-gradient-to-br from-brand-600 to-brand-700 dark:from-brand-800 dark:to-brand-900 border-0 shadow-hard-5 overflow-hidden relative animate-in fade-in slide-in-from-bottom duration-700">
           <VStack className="gap-8 items-center text-center relative z-10">
             <VStack className="gap-4 max-w-2xl items-center">
               <Title size="4xl" className="font-heading font-black text-gray-200 ">
@@ -405,7 +405,7 @@ export function Component() {
               <Button
                 size="lg"
                 variant="secondary"
-                className="rounded-full bg-white hover:bg-zinc-100 text-brand-700 font-bold px-10 py-7 shadow-hard-3 hover:shadow-hard-4 transition-all duration-300 hover:scale-110"
+                className="rounded-lg bg-white hover:bg-zinc-100 text-brand-700 font-bold px-10 py-7 shadow-hard-3 hover:shadow-hard-4 transition-all duration-300 hover:scale-110"
               >
                 <HStack className="gap-2 items-center">
                   <Icon icon={Rocket} className="size-6" />
@@ -415,7 +415,7 @@ export function Component() {
               <Button
                 size="lg"
                 variant="outline"
-                className="rounded-full border-2 border-white/30 hover:border-white text-typography-950 hover:bg-white/10 font-bold px-10 py-7 transition-all duration-300 hover:scale-110"
+                className="rounded-lg border-2 border-white/30 hover:border-white text-typography-950 hover:bg-white/10 font-bold px-10 py-7 transition-all duration-300 hover:scale-110"
               >
                 <HStack className="gap-2 items-center">
                   <Icon icon={BarChart} className="size-6" />
@@ -558,11 +558,11 @@ export function Component() {
       </Footer>
 
       <Dialog open={showModal} onOpenChange={setShowModal}>
-        <DialogContent className="max-w-2xl rounded-xl p-0 border-2 border-zinc-200">
+        <DialogContent className="max-w-2xl rounded-lg p-0 border-2 border-zinc-200">
           <Box className="p-10">
             <VStack className="gap-6">
               <VStack className="gap-4 text-center">
-                <Box className="w-20 h-20 mx-auto rounded-2xl bg-brand-100 dark:bg-brand-900 flex items-center justify-center">
+                <Box className="w-20 h-20 mx-auto rounded-lg bg-brand-100 dark:bg-brand-900 flex items-center justify-center">
                   <Icon icon={Rocket} className="size-10 text-brand-600 dark:text-brand-400" />
                 </Box>
                 <Title
@@ -576,7 +576,7 @@ export function Component() {
                 </Text>
               </VStack>
 
-              <Card className="p-6 bg-zinc-50 border-zinc-200 rounded-2xl">
+              <Card className="rounded-xl">
                 <VStack className="gap-4">
                   <HStack className="gap-3 items-start">
                     <Icon
@@ -625,14 +625,14 @@ export function Component() {
 
               <HStack className="gap-4 pt-4">
                 <Button
-                  className="flex-1 rounded-full bg-brand-600 hover:bg-brand-700 dark:bg-brand-500 dark:hover:bg-brand-600 font-semibold py-6 transition-all duration-300"
+                  className="flex-1 rounded-lg bg-brand-600 hover:bg-brand-700 dark:bg-brand-500 dark:hover:bg-brand-600 font-semibold py-6 transition-all duration-300"
                   onClick={() => setShowModal(false)}
                 >
                   Começar agora
                 </Button>
                 <Button
                   variant="outline"
-                  className="flex-1 rounded-full border-2 font-semibold py-6 transition-all duration-300"
+                  className="flex-1 rounded-lg border-2 font-semibold py-6 transition-all duration-300"
                   onClick={() => setShowModal(false)}
                 >
                   Fechar

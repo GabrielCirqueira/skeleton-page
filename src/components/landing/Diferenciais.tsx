@@ -68,7 +68,7 @@ export function Diferenciais() {
           <motion.div key={i} variants={fadeInUp}>
             <Card className="h-full group">
               <VStack gap={6}>
-                <Box className="size-12 rounded-xl bg-brand-500/10 flex items-center justify-center text-brand-500 group-hover:bg-brand-500/20 transition-colors">
+                <Box className="size-12 rounded-lg bg-brand-500/10 flex items-center justify-center text-brand-500 group-hover:bg-brand-500/20 transition-colors">
                   <item.icon className="size-6" />
                 </Box>
                 <VStack gap={2}>

@@ -11,7 +11,7 @@ export function Card({ children, className, hoverGlow = true }: CardProps) {
   return (
     <div
       className={cn(
-        "relative bg-background-900 border border-outline-900 rounded-xl p-6 overflow-hidden transition-all duration-300",
+        "relative bg-background-900 border border-outline-900 rounded-lg p-6 overflow-hidden transition-all duration-300",
         hoverGlow && "hover:border-brand-500/50 hover:shadow-2xl hover:shadow-brand-500/10 group",
         className
       )}
