@@ -6,7 +6,7 @@ export function DocBreadcrumb() {
   const pathnames = location.pathname.split("/").filter((x) => x);
 
   return (
-    <nav className="flex items-center gap-2 mb-8 py-4 border-b border-outline-900/10">
+    <nav className="flex items-center gap-2 mb-8 py-3">
       <Link to="/" className="text-typography-400/50 hover:text-brand-500 transition-colors">
         <Home className="w-4 h-4" />
       </Link>

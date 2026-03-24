@@ -1,7 +1,6 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
-import { Title, Text } from "@/components/ui";
-import { VStack, Box } from "@/components/layout/Stack";
+import { Text } from "@/components/ui";
+import { VStack } from "@/components/layout/Stack";
 import { cn } from "@/utils/cn";
 
 interface DocLink {
@@ -60,12 +59,12 @@ export function DocSidebar({ className }: { className?: string }) {
       <VStack gap={10} className="py-8">
         {grupos.map((grupo) => (
           <VStack key={grupo.title} gap={4}>
-            <Title
-              variant="h4"
-              className="text-[10px] uppercase tracking-[0.2em] text-typography-400/50 font-black px-3"
+            <Text
+              variant="xs"
+              className="text-[11px] uppercase tracking-[0.25em] text-typography-400/60 font-black px-3 mb-1"
             >
               {grupo.title}
-            </Title>
+            </Text>
             <nav className="flex flex-col gap-1">
               {grupo.links.map((link) => (
                 <NavLink
@@ -74,9 +73,9 @@ export function DocSidebar({ className }: { className?: string }) {
                   end={link.href === "/docs"}
                   className={({ isActive }) =>
                     cn(
-                      "px-3 py-2 text-sm font-bold rounded-lg transition-all flex items-center gap-2 border border-transparent",
+                      "px-3 py-2 text-sm font-bold rounded-lg transition-all flex items-center gap-2 border border-transparent group",
                       isActive
-                        ? "bg-brand-500/10 text-brand-500 border-brand-500/20 shadow-[0_0_15px_rgba(28,195,157,0.05)]"
+                        ? "bg-brand-500/10 text-brand-600 dark:text-brand-400 border-brand-500/15"
                         : "text-typography-400 hover:text-typography-950 hover:bg-background-800"
                     )
                   }

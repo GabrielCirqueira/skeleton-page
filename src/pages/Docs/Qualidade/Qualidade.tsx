@@ -1,4 +1,4 @@
-import { Title, Text, Badge, Card, Callout, CodeBlock } from "@/components/ui";
+import { Title, Text, Card, Callout, CodeBlock } from "@/components/ui";
 import { VStack, Box, HStack } from "@/components/layout/Stack";
 import { CheckCircle2, FlaskConical, Search, ArrowRight, GitCommit, Settings } from "lucide-react";
 import { Button } from "@shadcn/components/button";
@@ -6,84 +6,118 @@ import { Link } from "react-router-dom";
 
 export function Component() {
   return (
-    <VStack gap={12} className="pb-20">
-      <VStack gap={4}>
-        <Badge variant="brand">Confiança</Badge>
-        <Title variant="h1" id="qualidade" className="text-4xl md:text-5xl text-typography-950">
+    <VStack gap={10} className="pb-20">
+      <VStack gap={3}>
+        <span className="text-xs font-bold uppercase tracking-widest text-brand-600 dark:text-brand-400">
+          Confiança
+        </span>
+        <Title
+          variant="h1"
+          id="qualidade"
+          className="text-3xl sm:text-4xl text-typography-950 dark:text-white"
+        >
           Qualidade de <span className="text-brand-500">Engenharia</span>
         </Title>
-        <Text variant="lg" className="text-typography-400 max-w-2xl">
+        <Text variant="lg" className="text-typography-600 dark:text-typography-400 max-w-2xl">
           Nenhum código entra em produção sem passar por uma bateria rigorosa de testes, análise
           estática e validação de padrões.
         </Text>
       </VStack>
 
       <section id="testes">
-        <VStack gap={6}>
-          <Title variant="h2" id="piramide-testes" className="text-2xl text-typography-950 pt-8">
-            Pirâmide de Testes
-          </Title>
-          <Text className="text-typography-400">
-            Focamos em testes unitários para a lógica de domínio e testes de integração para
-            garantir que o banco de dados e a API respondam corretamente.
-          </Text>
+        <VStack gap={5}>
+          <VStack gap={1}>
+            <Title
+              variant="h2"
+              id="piramide-testes"
+              className="text-2xl text-typography-950 dark:text-white"
+            >
+              Pirâmide de Testes
+            </Title>
+            <Text className="text-typography-600 dark:text-typography-400">
+              Focamos em testes unitários para a lógica de domínio e testes de integração para
+              garantir que o banco de dados e a API respondam corretamente.
+            </Text>
+          </VStack>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Card className="border-brand-500/10 bg-brand-500/[0.02]">
-              <HStack gap={3} className="mb-2">
-                <FlaskConical className="size-4 text-brand-500" />
-                <Title variant="h4" className="text-typography-950 text-base">
-                  Testes Unitários
-                </Title>
+            <Card>
+              <HStack gap={4} align="start">
+                <Box className="size-10 rounded-lg bg-brand-500/10 flex items-center justify-center shrink-0">
+                  <FlaskConical className="size-5 text-brand-500" strokeWidth={2} />
+                </Box>
+                <VStack gap={1}>
+                  <p className="text-sm font-semibold text-typography-950 dark:text-white">
+                    Testes Unitários
+                  </p>
+                  <Text variant="sm" className="text-typography-600 dark:text-typography-400">
+                    Testam Services e Value Objects isoladamente sem I/O.
+                  </Text>
+                </VStack>
               </HStack>
-              <Text variant="sm" className="text-typography-400">
-                Testam Services e Value Objects isoladamente sem I/O.
-              </Text>
             </Card>
-            <Card className="border-brand-500/10 bg-brand-500/[0.02]">
-              <HStack gap={3} className="mb-2">
-                <CheckCircle2 className="size-4 text-brand-500" />
-                <Title variant="h4" className="text-typography-950 text-base">
-                  Integração
-                </Title>
+            <Card>
+              <HStack gap={4} align="start">
+                <Box className="size-10 rounded-lg bg-brand-500/10 flex items-center justify-center shrink-0">
+                  <CheckCircle2 className="size-5 text-brand-500" strokeWidth={2} />
+                </Box>
+                <VStack gap={1}>
+                  <p className="text-sm font-semibold text-typography-950 dark:text-white">
+                    Integração
+                  </p>
+                  <Text variant="sm" className="text-typography-600 dark:text-typography-400">
+                    Validam o contrato da API e a persistência no MySQL.
+                  </Text>
+                </VStack>
               </HStack>
-              <Text variant="sm" className="text-typography-400">
-                Validam o contrato da API e a persistência no MySQL.
-              </Text>
             </Card>
           </div>
         </VStack>
       </section>
 
       <section id="static-analysis">
-        <VStack gap={6}>
-          <Title variant="h2" id="analise-estatica" className="text-2xl text-typography-950 pt-8">
-            Análise Estática e Linting
-          </Title>
-          <Text className="text-typography-400">
-            O compilador não é suficiente. Usamos ferramentas que "leem" o código em busca de bugs
-            lógicos e violações de estilo.
-          </Text>
+        <VStack gap={5}>
+          <VStack gap={1}>
+            <Title
+              variant="h2"
+              id="analise-estatica"
+              className="text-2xl text-typography-950 dark:text-white"
+            >
+              Análise Estática e Linting
+            </Title>
+            <Text className="text-typography-600 dark:text-typography-400">
+              O compilador não é suficiente. Usamos ferramentas que &ldquo;leem&rdquo; o código em
+              busca de bugs lógicos e violações de estilo.
+            </Text>
+          </VStack>
           <div className="space-y-4">
             <HStack
               gap={4}
-              className="p-4 bg-background-900/30 border border-outline-900 rounded-lg"
+              className="p-4 bg-background-800/30 dark:bg-background-900/50 border border-outline-100 dark:border-outline-900 rounded-lg"
             >
-              <Search className="size-5 text-brand-500 shrink-0" />
-              <VStack gap={1}>
-                <Text className="text-typography-950 font-black">PHPStan (Nível 6)</Text>
-                <Text variant="sm" className="text-typography-400">
+              <Box className="size-9 rounded-lg bg-brand-500/10 flex items-center justify-center shrink-0">
+                <Search className="size-4 text-brand-500" strokeWidth={2} />
+              </Box>
+              <VStack gap={0}>
+                <p className="text-sm font-semibold text-typography-950 dark:text-white">
+                  PHPStan (Nível 6)
+                </p>
+                <Text variant="sm" className="text-typography-600 dark:text-typography-400">
                   Garante tipagem correta em todo o backend Symfony.
                 </Text>
               </VStack>
             </HStack>
             <HStack
               gap={4}
-              className="p-4 bg-background-900/30 border border-outline-900 rounded-lg"
+              className="p-4 bg-background-800/30 dark:bg-background-900/50 border border-outline-100 dark:border-outline-900 rounded-lg"
             >
-              <Settings className="size-5 text-brand-500 shrink-0" />
-              <VStack gap={1}>
-                <Text className="text-typography-950 font-black">Biome (Frontend)</Text>
-                <Text variant="sm" className="text-typography-400">
+              <Box className="size-9 rounded-lg bg-brand-500/10 flex items-center justify-center shrink-0">
+                <Settings className="size-4 text-brand-500" strokeWidth={2} />
+              </Box>
+              <VStack gap={0}>
+                <p className="text-sm font-semibold text-typography-950 dark:text-white">
+                  Biome (Frontend)
+                </p>
+                <Text variant="sm" className="text-typography-600 dark:text-typography-400">
                   Linter e formatter ultra-rápido para React e TypeScript.
                 </Text>
               </VStack>
@@ -93,21 +127,26 @@ export function Component() {
       </section>
 
       <section id="commits">
-        <VStack gap={6}>
+        <VStack gap={5}>
           <Title
             variant="h2"
             id="conventional-commits"
-            className="text-2xl text-typography-950 pt-8"
+            className="text-2xl text-typography-950 dark:text-white"
           >
-            Commitlint & Husky
+            Commitlint &amp; Husky
           </Title>
           <Callout variant="warning">
             O projeto bloqueia commits que não seguem o padrão Conventional Commits (ex:{" "}
             <code>feat(auth): ...</code>).
           </Callout>
-          <HStack gap={4} className="p-4 bg-background-950 border border-outline-900 rounded-lg">
-            <GitCommit className="size-5 text-brand-500 shrink-0" />
-            <Text className="text-typography-400 text-sm">
+          <HStack
+            gap={4}
+            className="p-4 bg-background-800/30 dark:bg-background-900/50 border border-outline-100 dark:border-outline-900 rounded-lg"
+          >
+            <Box className="size-9 rounded-lg bg-brand-500/10 flex items-center justify-center shrink-0">
+              <GitCommit className="size-4 text-brand-500" strokeWidth={2} />
+            </Box>
+            <Text variant="sm" className="text-typography-600 dark:text-typography-400">
               Isso garante um histórico de projeto limpo e permite a geração automática de
               Changelogs.
             </Text>
@@ -116,8 +155,12 @@ export function Component() {
       </section>
 
       <section id="qa-commands">
-        <VStack gap={6}>
-          <Title variant="h2" id="comandos-qa" className="text-2xl text-typography-950 pt-8">
+        <VStack gap={5}>
+          <Title
+            variant="h2"
+            id="comandos-qa"
+            className="text-2xl text-typography-950 dark:text-white"
+          >
             Bateria de QA
           </Title>
           <CodeBlock
@@ -135,25 +178,34 @@ make lint-all`}
         </VStack>
       </section>
 
-      <Box className="pt-12 mt-12 border-t border-outline-900/50">
-        <HStack
-          justify="between"
-          className="items-center bg-brand-500/[0.03] p-8 rounded-lg border border-brand-500/20"
-        >
-          <VStack gap={2}>
-            <Title variant="h3" className="text-typography-950">
-              Infraestrutura e DevOps
-            </Title>
-            <Text className="text-typography-400">Deploy, Docker e configuração de ambientes.</Text>
+      <HStack
+        justify="between"
+        align="center"
+        className="mt-4 p-6 rounded-xl bg-background-50 dark:bg-background-900 border border-outline-100 dark:border-outline-900"
+      >
+        <HStack gap={3} align="center">
+          <Box className="size-9 rounded-lg bg-brand-500/10 flex items-center justify-center shrink-0">
+            <ArrowRight className="size-4 text-brand-500" strokeWidth={2} />
+          </Box>
+          <VStack gap={0}>
+            <p className="text-sm font-semibold text-typography-950 dark:text-white">Próximo</p>
+            <p className="text-sm text-typography-600 dark:text-typography-400">
+              Deploy, Docker e configuração de ambientes
+            </p>
           </VStack>
-          <Button asChild size="lg" className="group">
-            <Link to="/docs/devops">
-              DevOps{" "}
-              <ArrowRight className="ml-2 size-4 group-hover:translate-x-1 transition-transform" />
-            </Link>
-          </Button>
         </HStack>
-      </Box>
+        <Button
+          asChild
+          variant="outline"
+          size="sm"
+          className="group border-outline-100 dark:border-outline-900 hover:border-brand-500/50"
+        >
+          <Link to="/docs/devops">
+            DevOps
+            <ArrowRight className="ml-2 size-3.5 group-hover:translate-x-1 transition-transform duration-200" />
+          </Link>
+        </Button>
+      </HStack>
     </VStack>
   );
 }

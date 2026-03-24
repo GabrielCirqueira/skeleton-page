@@ -1,4 +1,4 @@
-import { Title, Text, Badge, Card, Callout, CodeBlock } from "@/components/ui";
+import { Title, Text, Card, Callout, CodeBlock } from "@/components/ui";
 import { VStack, Box, HStack } from "@/components/layout/Stack";
 import { Hash, ListOrdered, ArrowRight } from "lucide-react";
 import { Button } from "@shadcn/components/button";
@@ -6,25 +6,27 @@ import { Link } from "react-router-dom";
 
 export function Component() {
   return (
-    <VStack gap={12} className="pb-20">
-      <VStack gap={4}>
-        <Badge variant="brand">Persistência</Badge>
+    <VStack gap={10} className="pb-20">
+      <VStack gap={3}>
+        <span className="text-xs font-bold uppercase tracking-widest text-brand-600 dark:text-brand-400">
+          Persistência
+        </span>
         <Title
           variant="h1"
           id="banco-de-dados"
-          className="text-4xl md:text-5xl text-typography-950"
+          className="text-3xl sm:text-4xl text-typography-950 dark:text-white"
         >
           Banco de Dados e <span className="text-brand-500">Doctrine</span>
         </Title>
-        <Text variant="lg" className="text-typography-400 max-w-2xl">
-          Utilizamos MySQL 8.3 com Doctrine ORM 3.x, configurado para alta performance e integridade
-          de dados absoluta.
+        <Text variant="lg" className="text-typography-600 dark:text-typography-400 max-w-2xl">
+          MySQL 8.3 com Doctrine ORM 3.x, configurado para alta performance e integridade de dados
+          absoluta desde o schema até a paginação.
         </Text>
       </VStack>
 
       <section id="uuid">
         <VStack gap={6}>
-          <Title variant="h2" id="id-uuidv7" className="text-2xl text-typography-950 pt-8">
+          <Title variant="h2" id="id-uuidv7" className="text-2xl text-typography-950">
             UUID v7 como Chave Primária
           </Title>
           <Text className="text-typography-400">
@@ -60,19 +62,20 @@ export function Component() {
       </section>
 
       <section id="migrations">
-        <VStack gap={6}>
-          <Title
-            variant="h2"
-            id="versionamento-schema"
-            className="text-2xl text-typography-950 pt-8"
-          >
-            Doctrine Migrations
-          </Title>
-          <Text className="text-typography-400">
-            Nunca altere o banco de dados manualmente. Todo o schema é versionado através de
-            Migrations, garantindo que todos os ambientes (Dev, Staging, Prod) estejam sempre
-            sincronizados.
-          </Text>
+        <VStack gap={5}>
+          <VStack gap={1}>
+            <Title
+              variant="h2"
+              id="versionamento-schema"
+              className="text-2xl text-typography-950 dark:text-white"
+            >
+              Doctrine Migrations
+            </Title>
+            <Text className="text-typography-600 dark:text-typography-400">
+              Nunca altere o banco manualmente. Todo o schema é versionado, garantindo que todos os
+              ambientes estejam sempre sincronizados.
+            </Text>
+          </VStack>
           <CodeBlock
             language="bash"
             title="Workflow de Migrations"
@@ -87,18 +90,29 @@ make migrate`}
       </section>
 
       <section id="paginacao">
-        <VStack gap={6}>
-          <Title variant="h2" id="padrao-paginacao" className="text-2xl text-typography-950 pt-8">
-            Padrão de Paginação
-          </Title>
+        <VStack gap={5}>
+          <VStack gap={1}>
+            <Title
+              variant="h2"
+              id="padrao-paginacao"
+              className="text-2xl text-typography-950 dark:text-white"
+            >
+              Padrão de Paginação
+            </Title>
+            <Text className="text-typography-600 dark:text-typography-400">
+              Todo endpoint que retorna lista deve ser paginado para evitar overhead de memória e
+              rede.
+            </Text>
+          </VStack>
           <Callout variant="tip">
-            Todo endpoint que retorna uma lista de recursos deve ser obrigatoriamente paginado para
-            evitar overhead de memória e rede.
+            O Catalyst impõe um contrato unificado: o frontend espera metadados como{" "}
+            <code className="text-brand-500 bg-brand-500/10 px-1 rounded text-xs">total</code>,{" "}
+            <code className="text-brand-500 bg-brand-500/10 px-1 rounded text-xs">pagina</code> e{" "}
+            <code className="text-brand-500 bg-brand-500/10 px-1 rounded text-xs">
+              totalPaginas
+            </code>
+            .
           </Callout>
-          <Text className="text-typography-400">
-            O Catalyst impõe um contrato de paginação unificado. O frontend espera metadados como{" "}
-            <code>total</code>, <code>pagina</code> e <code>totalPaginas</code>.
-          </Text>
           <CodeBlock
             language="php"
             title="Repository Implementation"
@@ -119,27 +133,34 @@ make migrate`}
         </VStack>
       </section>
 
-      <Box className="pt-12 mt-12 border-t border-outline-900/50">
-        <HStack
-          justify="between"
-          className="items-center bg-brand-500/[0.03] p-8 rounded-lg border border-brand-500/20"
-        >
-          <VStack gap={2}>
-            <Title variant="h3" className="text-typography-950">
-              Processamento Assíncrono
-            </Title>
-            <Text className="text-typography-400">
-              Envio de e-mails e tarefas pesadas em background.
-            </Text>
+      <HStack
+        justify="between"
+        align="center"
+        className="mt-4 p-6 rounded-xl bg-background-50 dark:bg-background-900 border border-outline-100 dark:border-outline-900"
+      >
+        <HStack gap={3} align="center">
+          <Box className="size-9 rounded-lg bg-brand-500/10 flex items-center justify-center shrink-0">
+            <ArrowRight className="size-4 text-brand-500" strokeWidth={2} />
+          </Box>
+          <VStack gap={0}>
+            <p className="text-sm font-semibold text-typography-950 dark:text-white">Próximo</p>
+            <p className="text-sm text-typography-600 dark:text-typography-400">
+              Processamento assíncrono com Symfony Messenger
+            </p>
           </VStack>
-          <Button asChild size="lg" className="group">
-            <Link to="/docs/mensageria">
-              Mensageria{" "}
-              <ArrowRight className="ml-2 size-4 group-hover:translate-x-1 transition-transform" />
-            </Link>
-          </Button>
         </HStack>
-      </Box>
+        <Button
+          asChild
+          variant="outline"
+          size="sm"
+          className="group border-outline-100 dark:border-outline-900 hover:border-brand-500/50"
+        >
+          <Link to="/docs/mensageria">
+            Mensageria
+            <ArrowRight className="ml-2 size-3.5 group-hover:translate-x-1 transition-transform duration-200" />
+          </Link>
+        </Button>
+      </HStack>
     </VStack>
   );
 }
