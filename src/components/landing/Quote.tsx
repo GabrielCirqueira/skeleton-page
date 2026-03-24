@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Title } from "@/components/ui";
-import { VStack, Box } from "@/components/layout/Stack";
+import { Box } from "@/components/layout/Stack";
 import { fadeInUp } from "@/utils/animacoes";
 import { Quote as QuoteIcon } from "lucide-react";
 
@@ -24,7 +24,7 @@ export function Quote() {
         <span className="text-brand-500">barco de pesca</span> de elite para você dominar o oceano
         SaaS."
       </Title>
-      <Box className="mt-8 size-1 w-24 bg-brand-500/30 rounded-full" />
+      <Box className="mt-8 size-1 w-24 bg-brand-500/30 rounded-full">&nbsp;</Box>
     </motion.div>
   );
 }

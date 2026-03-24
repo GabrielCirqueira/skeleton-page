@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Title, Text } from "@/components/ui";
-import { HStack, VStack, Box } from "@/components/layout/Stack";
+import { VStack } from "@/components/layout/Stack";
 import { fadeInUp, containerStagger } from "@/utils/animacoes";
 
 const stats = [

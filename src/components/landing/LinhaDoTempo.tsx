@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Title, Text } from "@/components/ui";
-import { VStack, HStack, Box } from "@/components/layout/Stack";
-import { fadeInUp, containerStagger } from "@/utils/animacoes";
+import { VStack, Box } from "@/components/layout/Stack";
+import { fadeInUp } from "@/utils/animacoes";
 import { Badge } from "@/components/ui/Badge";
 
 const versoes = [
@@ -40,7 +40,9 @@ export function LinhaDoTempo() {
               <Box className="mx-auto">
                 <Box
                   className={`size-6 rounded-full border-4 border-background-950 ${item.active ? "bg-brand-500 shadow-[0_0_20px_rgba(28,195,157,0.5)]" : "bg-outline-900"}`}
-                />
+                >
+                  &nbsp;
+                </Box>
               </Box>
               <VStack
                 gap={2}

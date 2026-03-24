@@ -16,6 +16,8 @@ export default [
       'node_modules/**',
       '*.config.js',
       '*.config.cjs',
+      '.prettierrc.cjs',
+      'scripts/**',
       '.husky/**',
       'coverage/**',
       'src/shadcn/**',

@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
-import { Title, Text } from "@/components/ui";
+import { Title } from "@/components/ui";
 import { Container } from "./Containers";
 import { HStack, Box } from "./Stack";
 import { Button } from "@shadcn/components/button";
 import { Menu, X, Github } from "lucide-react";
 import React from "react";
-import { cn } from "@/utils/cn";
 import { ThemeToggle } from "../ui/ThemeToggle";
 
 export function Navbar() {
